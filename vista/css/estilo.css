@@ -1,0 +1,128 @@
+*{
+	
+	margin: 0px;
+}
+.cabeza{}
+.cabecera{
+	background-color: #0075A2;
+	border:1px;
+	height: 125px;
+	max-height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 50px;	
+}
+.cabecera h3{
+	background-color: #0075A2;
+	margin: 0;
+}
+
+.wrapper{
+	background-color: lightgrey;
+	
+	
+}
+.searcher{
+	
+	width: 90%;
+	max-width: 1000px;
+	margin: 50px auto;
+	padding: 12px 0 ;
+	text-align: center;
+}
+
+.buscador{
+	float:left;
+}
+.boton-buscador{
+	float:right;
+}
+
+input[type="search"]{
+	width: 600px;
+	padding: 10px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+input[type="submit"]{
+	text-align: right;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: green;
+	color: white;
+	font: sans-serif;
+}
+
+input[type="ingenieria"]{
+	padding:20px;
+	border-radius: 20px;
+	background-color: #BD1521;
+}
+
+input[type="salud"]{
+	padding:20px;
+	border-radius: 20px;
+	background-color: #93BF20;
+}
+
+input[type="sociales"]{
+	padding:20px;
+	border-radius: 20px;
+	background-color: #0172B8;
+}
+
+input[type="iniciales"]{
+	padding:20px;
+	border-radius: 20px;
+	background-color: #ED5931;
+}
+
+.botones_institutos{
+	margin-left:200px; 
+	margin-right:200px;
+}
+
+.pie{
+	height: 100px;
+	background-color: #0075A2;
+	display: flex;
+	align-items: end;
+
+}
+
+.botones_institutos{
+	display: grid;
+	grid-template-columns: 100px 100px;
+	grid-gap: 20px;
+	width: 700px;
+	height: 200px;
+	justify-content: space-between;
+	justify-content: center
+	margin: auto;
+
+}
+
+.pie{
+	height: 120px;
+	background-color: #0075A2;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.pie p{
+	background-color: #0075A2;
+	margin:0;
+
+}
+
+.btn-primary{
+	
+	width: 400px;
+	height: 100px;
+}
+

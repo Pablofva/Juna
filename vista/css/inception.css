@@ -1,0 +1,224 @@
+body{
+    background:#ddd;
+    overflow:hidden;
+}
+
+div{
+    position:relative;
+}
+
+h1{
+    margin-top:15px;
+    text-align:center;
+    font-size:24px;
+    text-transform:uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+@keyframes rotate {
+    0% {transform: translateX(20px) rotateZ(3deg);}
+    50% {transform: translateX(-20px) rotateZ(-3deg);}
+    100% {transform: translateX(20px) rotateZ(3deg);}
+}
+
+.totem{
+    width:380px;
+    height:380px;
+    overflow:hidden;
+    margin:calc(50vh - 190px) auto 0;
+    animation: rotate 4s infinite ease-in-out;
+    position: static;
+}
+
+.top{
+    width:380px;
+    height:240px;
+}
+
+.bottom{
+    width:380px;
+    height:140px;
+}
+
+.top .left, .top .right{
+    width:190px;
+    height:240px;
+    background:#333;
+    float:left;
+}
+
+.top .left .roundy, .top .right .roundy{
+    width:350px;
+    height:350px;
+    right:8px;
+    bottom:20px;
+    border-radius:50%;
+    background:#ddd;
+    position:absolute;
+}
+
+.top .right .roundy{
+    left:8px;
+}
+
+.top .left .righty, .top .right .righty{
+    width:50px;
+    height:50px;
+    right:8px;
+    top:0px;
+    background:#ddd;
+    position:absolute;
+}
+
+.top .right .righty{
+    left:8px;
+}
+
+.top .left .bottomy, .top .right .bottomy{
+    width:50px;
+    height:50px;
+    left:0px;
+    bottom:0px;
+    background:#ddd;
+    position:absolute;
+    overflow:hidden;
+}
+
+.top .right .bottomy{
+    left:inherit;
+    right:0px;
+}
+
+.top .left .toppy, .top .right .toppy{
+    width:10px;
+    height:40px;
+    right:0px;
+    top:0px;
+    background:#ddd;
+    position:absolute;
+    overflow:hidden;
+}
+
+.top .right .toppy{
+    left:0px;
+}
+
+.top .left .toppy .t-roundy, .top .right .toppy .t-roundy{
+    width: 25px;
+    height: 100px;
+    left: 2px;
+    top: 0px;
+    background: #333;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.top .right .toppy .t-roundy{
+    left:-17px;
+}
+
+.top .left .bottomy .b-roundy, .top .right .bottomy .b-roundy{
+    background: #333;
+    width: 200px;
+    height: 65px;
+    top: 20px;
+    border-radius: 50%;
+}
+
+.top .right .bottomy .b-roundy{
+    left: -150px;
+}
+
+.bottom .effect{
+    width:380px;
+    height:10px;
+    background:transparent;
+    position:absolute;
+    z-index:2;
+    overflow:hidden;
+}
+
+.bottom .effect .inner{
+    width:380px;
+    height:20px;
+    top:-10px;
+    background:#333;
+    border-radius:50%
+
+}
+
+.bottom .left, .bottom .right{
+    width:190px;
+    height:140px;
+    float:left;
+    overflow:hidden;
+    background:#444;
+}
+
+.bottom .left .roundy, .bottom .right .roundy{
+    width:350px;
+    height:350px;
+    right:10px;
+    top:8px;
+    border-radius:50%;
+    background:#ddd;
+    position:absolute;
+}
+
+.bottom .right .roundy{
+    left:10px;
+}
+
+.bottom .left .toppy, .bottom .right .toppy{
+    width: 35px;
+    height: 50px;
+    left: 0px;
+    top: 0px;
+    background: #ddd;
+    position: absolute;
+    overflow: hidden;
+}
+.bottom .right .toppy{
+    left:inherit;
+    right:0;
+}
+
+.bottom .left .toppy .t-roundy, .bottom .right .toppy .t-roundy{
+    background: #444;
+    width: 200px;
+    height: 36px;
+    top: -21px;
+    border-radius: 50%;
+    z-index: 0;
+}
+.bottom .right .toppy .t-roundy{
+    left: -164px;
+}
+
+.bottom .left .bottomy, .bottom .right .bottomy{
+    width: 30px;
+    height: 60px;
+    right: 0px;
+    bottom: 0px;
+    background: #ddd;
+    position: absolute;
+    overflow: hidden;
+}
+
+.bottom .right .bottomy{
+    left:0;
+}
+
+.bottom .left .bottomy .b-roundy, .bottom .right .bottomy .b-roundy{
+    width: 100px;
+    height: 155px;
+    left: -6px;
+    top: -93px;
+    background: #444;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.bottom .right .bottomy .b-roundy{
+    left: -64px;
+}
