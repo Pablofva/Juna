@@ -44,7 +44,7 @@
 }
 
 
-/* Aqui empiezo a editar las ubicaciones */
+/* Aqui empiezo a editar los sectores */
 
 
 .boton-sector{
@@ -78,7 +78,7 @@
 	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
 	border-radius: 5px;
 	padding: 8px;
-	width: 800px;
+	width: 700px;
 	transition: .3s ease all;
 	transform: scale(0.7);
 	opacity: 0;

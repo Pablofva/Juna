@@ -18,7 +18,7 @@ var abrirBuffet = document.getElementById('buffet'),
 abrirBuffet.addEventListener('click', function(){
 	overlay.classList.add('active');
 	popup.classList.add('active');
-	imagen.setAttribute('src', 'vista/img/1.jpg');
+	imagen.setAttribute('src', 'vista/img/buffet.jpg');
 })
 
 abrirSala.addEventListener('click', function(){
