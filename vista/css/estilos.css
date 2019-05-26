@@ -12,6 +12,7 @@
 
 }
 .wrapper{
+
 	background-color: lightgrey;
 	
 	
@@ -41,3 +42,95 @@
 	align-items: center;
 	color: white;
 }
+
+
+/* Aqui empiezo a editar las ubicaciones */
+
+
+.boton-sector{
+	width: 70%;
+    height: 120px;
+    margin-top: 20px;
+    font-size: 30px;
+    line-height: 1.33;
+    border-radius: 20px;
+}
+
+.overlay{
+	background: rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.overlay.active {
+	visibility: visible;
+}
+
+.popup{
+	background: #EFEFEF;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
+	border-radius: 5px;
+	padding: 8px;
+	width: 600px;
+	transition: .3s ease all;
+	transform: scale(0.7);
+	opacity: 0;
+}
+
+.popup.active {
+	opacity: 1; 
+	transform: scale(1);
+}
+
+
+
+.popup .btn-cerrar-popup {
+	font-size: 16px;
+	line-height:  16px;
+	display: block;
+	text-align: right;
+	margin-bottom: 8px;
+	color: #414141;
+	transition: .3s ease all;
+}
+
+.popup .btn-cerrar-popup:hover{
+	color: #000;
+}
+
+.imagen-sector {
+	width: 100%;
+}
+
+
+.row{
+	padding: 0px;
+	border-left: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+.col-md-6 {
+	padding: 0px;
+	border-left: 0px;
+	margin: 0px;
+	width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

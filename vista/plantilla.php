@@ -2,6 +2,7 @@
 <html>
 <head>
 	<?php include "vista/modulos/head.php"; ?>
+
 </head>
 <body>
 	

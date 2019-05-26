@@ -15,7 +15,7 @@
 			 	ficheros que haya en la carpeta contenidos, donde
 				estan todo lo que se muestra al usuario y varía.
 			*/
-			$listaBlanca = ["home", "institutos", "materias", "carreras", "años", "info"];
+			$listaBlanca = ["home", "institutos", "materias", "carreras", "años", "info", "sectores"];
 
 
 

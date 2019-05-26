@@ -19,9 +19,11 @@
                     </button>
 	</div>
 	<div class="col-md-6 py-4">
-                    <button type="button" class="btn btn-danger btn-circle btn-xl"><i class="fas fa-map-marked-alt"></i>
-                        <h3>Mapas</h3>
-                    </button>
+		<form action="sectores">
+        <button type="submit" class="btn btn-danger btn-circle btn-xl"><i class="fas fa-map-marked-alt"></i>
+        <h3>Mapas</h3>
+        </button>
+        </form>
 	</div>
                     
                     
