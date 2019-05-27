@@ -16,38 +16,32 @@ var abrirBuffet = document.getElementById('buffet'),
 // agrego imagen segun donde se haya hecho un click
 
 abrirBuffet.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/buffet.jpg');
 })
 
 abrirSala.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/2.jpg');
 })
 
 abrirFotocopiadora.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/3.jpg');
 })
 
 abrirDepartamentos.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/3.jpg');
 })
 
 abrirLaboratorio.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/3.jpg');
 })
 
 abrirBaños.addEventListener('click', function(){
-	overlay.classList.add('active');
-	popup.classList.add('active');
+	abrirVentana();
 	imagen.setAttribute('src', 'vista/img/3.jpg');
 })
 
@@ -59,3 +53,11 @@ cerrar.addEventListener('click', function(){
 	overlay.classList.remove('active');
 	popup.classList.remove('active');
 })
+
+
+// Funcion que abre la ventana
+
+function abrirVentana(){
+	overlay.classList.add('active');
+	popup.classList.add('active');
+}
