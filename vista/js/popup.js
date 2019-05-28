@@ -22,12 +22,12 @@ abrirBuffet.addEventListener('click', function(){
 
 abrirSala.addEventListener('click', function(){
 	abrirVentana();
-	imagen.setAttribute('src', 'vista/img/2.jpg');
+	imagen.setAttribute('src', 'vista/img/sala.jpg');
 })
 
 abrirFotocopiadora.addEventListener('click', function(){
 	abrirVentana();
-	imagen.setAttribute('src', 'vista/img/3.jpg');
+	imagen.setAttribute('src', 'vista/img/foto.jpg');
 })
 
 abrirDepartamentos.addEventListener('click', function(){
