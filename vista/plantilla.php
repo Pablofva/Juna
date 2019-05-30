@@ -17,7 +17,7 @@
 	</section>
 	<!-- Contenido de la página, dentro de la section wrapper --->
 	<section class="wrapper text-center">
-		<div class="container ">
+		<div class="container">
 		<?php
 		require_once "controlador/vistaControlador.php";
 
