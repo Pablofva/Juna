@@ -1,6 +1,6 @@
 <div class="row">
 	<div class="col-md-6 py-4">
-		<form action="institutos">
+		<form action="institutos" method="POST">
 		<button type="submit" class="btn btn-success btn-circle btn-xl">
 		<i class="fas fa-chalkboard-teacher"></i>
         <h3>Aulas</h3>
