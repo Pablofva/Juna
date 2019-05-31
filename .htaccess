@@ -1,7 +1,15 @@
 Options All -Indexes
+Options +FollowSymLinks
 
 RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+RewriteRule ^(.*)/(.*)$ http://localhost/puaj [L]
+
 RewriteRule ^([a-zA-Z0-9/]+)$ index.php?views=$1
+
+ErrorDocument 404 http://localhost/puaj/
 
 # URL amigables y seguras, filtra aquellos directorios que 
 # no queremos que sean visibles para los usuarios para
