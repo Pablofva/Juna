@@ -25,7 +25,7 @@
 <div class="overlay" id="overlay">
 	<div class="popup" id="popup">
 		<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-		<img class="imagen-sector" id="selector-imagen">
+		<img class="imagen-sector img-responsive" id="selector-imagen">
 		<h2 class="lead">Es posible agregarle texto</h2>
 	</div>
 </div>
