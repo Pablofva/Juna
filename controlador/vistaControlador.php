@@ -19,7 +19,10 @@
 			if (isset($_GET['views'])) 
 			{
 				$ruta = explode("/", $_GET['views']);
-				$respuesta = vistaModelo::obtener_vista_modelo($ruta[0]);
+				$ruta1 = explode(".", $ruta[0]);
+				$respuesta = vistaModelo::obtener_vista_modelo($ruta1[0]);
+				#$respuesta = vistaModelo::obtener_vista_modelo(end($ruta));
+
 			}
 			else
 			{

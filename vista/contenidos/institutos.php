@@ -3,7 +3,7 @@
 <div class="row">
 <div class="col-md-12">
 	<div class="center-block py-4 ">
-		<form class="form-inline">
+		<form class="form-inline" method="POST">
 	
   			<div class="form-group mb-2 ">
     			<label for="staticEmail2" class="sr-only">Email</label>

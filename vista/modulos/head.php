@@ -5,11 +5,11 @@
 
 	<!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
 
-	<link	rel="stylesheet"	type="text/css"	href="vista/css/estilos.css">
+	<link	rel="stylesheet"	type="text/css"	href="<?php echo SERVERURL; ?>vista/css/estilos.css">
 	<link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
 <!--iconos-->
-<script src="js/all.js"></script>
+<script src="<?php echo SERVERURL; ?>/vista/js/all.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">

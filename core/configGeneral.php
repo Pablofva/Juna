@@ -1,6 +1,6 @@
 <?php
 
-    const SERVERURL="http://localhost/puaj/";
+    const SERVERURL="http://localhost/punaj/";
 
     /*
         Cambien directorio según lo necesario.
