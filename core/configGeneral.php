@@ -1,6 +1,7 @@
 <?php
 
     const SERVERURL="http://localhost/puaj/";
+    const COMPANY="GESTION DE AULAS"
 
     /*
         Cambien directorio según lo necesario.

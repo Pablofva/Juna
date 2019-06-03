@@ -1,17 +1,17 @@
 <div class="row">
 	<div class="col-md-6 py-4">
 		<form action="institutos">
-		<button type="submit" class="btn btn-success btn-circle btn-xl">
-		<i class="fas fa-chalkboard-teacher"></i>
-        <h3>Aulas</h3>
-        </button>
+			<button type="submit" class="btn btn-success btn-circle btn-xl">
+				<i class="fas fa-chalkboard-teacher"></i>
+        		<h3>Aulas</h3>
+       		 </button>
 		</form>
 	</div>
 	<div class="col-md-6 py-4">
-                    <button type="button" class="btn btn-warning btn-circle btn-xl">
+                <button type="button" class="btn btn-warning btn-circle btn-xl">
                     <i class="fas fa-book"></i>
                     <h3>Libros</h3>
-                    </button>
+                </button>
 	</div>
 	<div class="col-md-6 py-4">
                     <button type="button" class="btn btn-info btn-circle btn-xl"><i class="far fa-building"></i>
