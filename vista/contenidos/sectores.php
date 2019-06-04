@@ -22,7 +22,6 @@
 </div>
 
 
-<<<<<<< HEAD
 <!-- El popup hecho con bootstrap -->
 <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -42,15 +41,5 @@
       </div>
     </div>
   </div>
-=======
-
-<div class="overlay" id="overlay">
-	<div class="popup" id="popup">
-		<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
-		<img class="imagen-sector img-responsive" id="selector-imagen">
-		<h2 class="lead">Es posible agregarle texto</h2>
-	</div>
->>>>>>> 177239cfd7eab2b9b9f2bfc2f1fe5bd6927dda39
-</div>
 
 <script type="text/javascript" src="vista/js/popup.js"></script>
