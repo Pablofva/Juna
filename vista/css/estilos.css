@@ -66,81 +66,11 @@ body{
 }
 
 
-
-.overlay{
-	background: rgba(0,0,0,0.3);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	visibility: hidden;
-}
-
-.overlay.active {
-	visibility: visible;
-}
-
-.popup{
-	background: #EFEFEF;
-	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.5);
-	border-radius: 5px;
-	width: 100%;
-	max-width: 600px;
-	padding: 8px;
-	box-sizing: border-box;
-	transition: .3s ease all;
-	transform: scale(0.7);
-	opacity: 0;
-}
-
-.popup.active {
-	opacity: 1; 
-	transform: scale(1);
-}
-
-
-
-.popup .btn-cerrar-popup {
-	font-size: 16px;
-	line-height:  16px;
-	display: block;
-	text-align: right;
-	margin-bottom: 8px;
-	color: #414141;
-	transition: .3s ease all;
-}
-
-.popup .btn-cerrar-popup:hover{
-	color: #000;
-}
-
 .imagen-sector {
 	width: 100%;
 	height: auto;
 }
 
 
-/* MEDIA QUERIES - RESPONSIVE DESIGN (pasar a otro archivo css) */
-
-@media screen and (max-width: 1000px){
-	.popup{
-		max-width: 460px;
-	}
-
-
-@media screen and (max-width: 800px){
-	.popup{
-		max-width: 420px;
-	}
-
-@media screen and (max-width: 650px){
-	.popup{
-		max-width: 360px;
-	}
-}
 
 
