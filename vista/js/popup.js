@@ -1,4 +1,4 @@
-
+//alert("Alex");
 // Importo las ID de los elementos a usar
 
 var abrirBuffet = document.getElementById('buffet'),
