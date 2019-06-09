@@ -46,7 +46,7 @@
 			}
 			else
 			{
-				$contenido = "login";
+				$contenido = "404";
 			}
 
 			return $contenido;
