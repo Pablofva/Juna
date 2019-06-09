@@ -31,7 +31,7 @@ ingenieria.addEventListener('click', function(){
 })
 
 salud.addEventListener('click', function(){
-
+	limpiarCarreras(contenido);
 })
 
 sociales.addEventListener('click', function(){
@@ -42,7 +42,7 @@ sociales.addEventListener('click', function(){
 })
 
 iniciales.addEventListener('click', function(){
-
+	limpiarCarreras(contenido);
 })
 
 
@@ -52,6 +52,8 @@ function agregarCarreras (contenido, listaCarreras){
 	var i;
 	for (i = 0; i < listaCarreras.length; i++) {
 		var a = document.createElement('a');
+		var h4 = document.createElement('h4');
+//		h4.setAttribute('class', 'boton-carreras');
 		a.setAttribute('class', 'carousel-control-next');
 		a.classList.add('boton-carreras');
 		a.setAttribute('id', "carrera"+i);
@@ -59,8 +61,10 @@ function agregarCarreras (contenido, listaCarreras){
 		a.setAttribute('role', 'button');
 		a.setAttribute('data-slide', 'next');
 
+
+		a.appendChild(h4);
 		contenido.appendChild(a);
-		a.innerHTML = listaCarreras[i];
+		h4.innerHTML = listaCarreras[i];
 	}
 
 }
