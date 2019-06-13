@@ -2,31 +2,59 @@
 <?php
 require_once "./core/mainModel.php";
 $mate= new mainModel();
-$arregloMate=$mate->get_materias();
+// ARREGLO CON INFORMACION DE LAS MATERIAS Y SU COMISION
+ $arreglo_mate_comi=$mate->get_materias();
+// ARREGLO CON LA INFORMACION COMPLETA DE LAS COMISIONES
+$arreglo_comi_com=$mate->get_materias_completo();
 
 
 
 ?>
 
 <!-- RECORRE EL ARREGLO DE COMISIONES CON INFORMACION COMPLETA Y LOS PROYECTA -->
-<?php foreach($arregloMate as $fila):?>
-<div class="row py-4">
-    <div class="col-sm-4 col-sm-3 fondo_materia ">
-        <div class="d-flex flex-column justify-content-center h-100  align-items-center">
-            <?php  echo $fila['materia'];?>
+<?php foreach($arreglo_mate_comi as $comision):?>
+<!-- ROW PRINCIPAL -->
+<div class="row py-4 container ml-1">
+    <div class="col-md-3  fondo_materia ">
+    <!-- ROW SECUNDARIO -->
+        
+                
+                <DIV class="d-flex flex-column justify-content-center h-100  align-items-center ">
+                <P CLASS="materia"><?php  echo $comision['materia'];?></P>
+
+                    <P CLASS="comision"><?php  echo 'PROFESOR:',$comision['profesor'];?></P>
+                    <P CLASS="comision"> <?php  echo 'COMISION:',$comision['comision'];?></P>
+                
+                </div>
+        
+            
+        
+    </div>
+    <div class="col-md-4 fondito">
+    <?php foreach($arreglo_comi_com as $dia_hora):?>
+        <?php  if($comision['comision']==$dia_hora['comision']){?>  
+        <div class="row">
+        <div class="col-sm-12">
+            <i class="fas fa-star"></i>
+            <?php  echo $dia_hora['dias_horarios'];?>
+        
         </div>
+        <div class="col-sm-6">
+            <b>AULA </b><?php  echo $dia_hora['aula'];?>
+        </div>
+        <div class="col-sm-6">
+            <b>EDIFICIO </b><?php  echo $dia_hora['edificio'];?>
+        </div>
+        <div class="col-sm-6">
+            <b>SEDE </b><?php  echo $dia_hora['sede'];?>
+        </div>
+        </div>
+            <?php }?>    
+    <?php endforeach; ?>  
     </div>
-    <div class="col-sm-4 col-sm-3">
-       <b>comision </b> <?php  echo $fila['comision'];?><br>
-        <b>horario </b><?php  echo $fila['dias_horarios'];?><br>
-        <b>profesor </b><?php  echo $fila['profesor'];?><br>
-        <b>aula </b><?php  echo $fila['aula'];?><br>
-        <b>edificio </b><?php  echo $fila['edificio'];?><br>
-        <b>sede </b><?php  echo $fila['sede'];?>
-    </div>
-    <div class="col-sm-4 col-sm-3 ">
-        <div class="d-flex flex-column justify-content-center h-100  align-items-center">
-            <button class="btn btn-danger">ver mapa</button>
+    <div class="col-md-2 ">
+        <div class="d-flex flex-column justify-content-center h-100  align-items-center py-2">
+        <button type="button" class="btn btn-success btn-circle btn-lp"><P class="letrasCirculoMapa">MAPA</P></button>
         </div>
     </div>
 

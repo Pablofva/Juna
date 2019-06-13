@@ -24,57 +24,41 @@
 		
 		</form>
 		</div>
-		<div class="col-md-6"><button id="" class="btn-success btn-circle btn-lg mb-5">Instituto de Ciencias de la Salud</button></div>
-		<div class="col-md-6"><button id="" class="btn-info btn-circle btn-lg mb-5">Instituto de Ciencias Sociales y Administración</button></div>
-		<div class="col-md-6"><button id="" class="btn-primary btn-circle btn-lg mb-5">Instituto de Estudios Iniciales</button></div>
+		<div class="col-md-6"><button id="salud" class="btn-success btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg " onclick="materias(3)">Instituto de Ciencias de la Salud</button></div>
+		<div class="col-md-6"><button id="sociales" class="btn-info btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg "  onclick="materias(2)">Instituto de Ciencias Sociales y Administración</button></div>
+		<div class="col-md-6"><button id="iniciales" class="btn-primary btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg "  onclick="materias(4)">Instituto de Estudios Iniciales</button></div>
 	</div>
-<!--	--------------------------------------
-	<div class="table-responsive">
-		<table class="table table-borderless">
-  		
-  		<tbody>
-    	<tr>
-      
-      <td><button id="" class="btn-danger btn-circle btn-lg" >Instituto de Ingeniería y Agronomía</button></td>
-      <td></td>
-      <td><button id="" class="btn-success btn-circle btn-lg">Instituto de Ciencias de la Salud</button></td>
-    </tr>
-    
-    <tr>
-    
-      <td><button id="" class="btn-info btn-circle btn-lg form-submit">Instituto de Ciencias Sociales y Administración</button></td>
-	  <td></td>
-	  <td><button id="" class="btn-primary btn-circle btn-lg form-submit">Instituto de Estudios Iniciales</button></td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
--->
-<!--
-<div class="col-sm-6"><button id="" class="btn-danger btn-lg btn-block form-submit" >Instituto de Ingeniería y Agronomía</button></div>
-  <div class="col-sm-6"><button id="" class="btn-success btn-lg form-submit">Instituto de Ciencias de la Salud</button></div>
-  <br>
-  <div class="col-sm-6"><button id="" class="btn-info btn-lg form-submit">Instituto de Ciencias Sociales y Administración</button></div>
-  <div class="col-sm-6"><button id="" class="btn-primary btn-lg form-submit">Instituto de Estudios Iniciales</button></div>
---><!--
-<button type="button" class="btn btn-pr<button id="iniciales" class="btn-primary btn form-submit">Instituto de Estudios Iniciales</button>imary">Primary</button>
-	<form action="institutos">
 	
-		<button id="" class="btn-danger btn form-submit" >Instituto de Ingeniería y Agronomía</button>
-	</form>
-	<form action="">
-	<button type="button" class="btn btn-primary">Primary</button>
-		<button id="" class="btn-success btn form-submit">Instituto de Ciencias de la Salud</button>
-	</form>
-	<form action="">
-		<button id="" class="btn-info btn form-submit">Instituto de Ciencias Sociales y Administración</button>
-	</form>
-	<form action="">
-		<button id="iniciales" class="btn-primary btn form-submit">Instituto de Estudios Iniciales</button>
-	</form>
+<!-- El popup hecho con bootstrap -->
+<div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalCenterTitle">CARRERAS</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body" id="copa">
+	  <!-- TABLA DONDE SE PROYECTAN LAS MATERIAS -->
+							<table class="table table-hover">
+						<thead>
+							<tr>
+							<th scope="col">#</th>
+							<th scope="col">CARRERAS</th>
+							
+							</tr>
+						</thead>
+						<tbody id="res">
+							
+						</tbody>
+						</table>
+      	
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+<script src="ajax/institutosAjax.js"></script>
 	
-	<input class="ingenieria "type="submit" value="Instituto de Ingeniería y Agronomía" >
-	<input type="submit" value="Instituto de Ciencias Sociales y Administración">
-	<input type="submit" value="Instituto de Ciencias de la Salud">
-	<input type="submit" value="Instituto de Estudios Iniciales">-->
