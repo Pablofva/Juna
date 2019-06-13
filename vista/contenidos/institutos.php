@@ -14,18 +14,29 @@
     			<input type="password" class="form-control" id="inputPassword2" placeholder="Materia">
   			</div>
   			<button type="submit" class="btn btn-warning btn-circle mb-2">Confirmar</button>
-
 		</form>
 		</div>
 </div>
 </div>
 	<!-- enlaces de institutos -->
+	<form action="carreras" method="POST">
 	<div class="row mt-3">
-		<div class="col-md-6"><button id="" class="btn-danger btn-circle btn-lg mb-5" >Instituto de Ingeniería y Agronomía</button></div>
-		<div class="col-md-6"><button id="" class="btn-success btn-circle btn-lg mb-5">Instituto de Ciencias de la Salud</button></div>
-		<div class="col-md-6"><button id="" class="btn-info btn-circle btn-lg mb-5">Instituto de Ciencias Sociales y Administración</button></div>
-		<div class="col-md-6"><button id="" class="btn-primary btn-circle btn-lg mb-5">Instituto de Estudios Iniciales</button></div>
-	</div>
+		
+		<div class="col-md-6">
+			<button id="" class="btn-danger btn-circle btn-lg mb-5" type="submit" name="test" value="1" >Instituto de Ingeniería y Agronomía</button>
+		</div>
+		
+		<div class="col-md-6">
+				<button id="" class="btn-success btn-circle btn-lg mb-5" type="submit" name="test" value="2">Instituto de Ciencias de la Salud</button>
+		</div>
+		
+
+		<div class="col-md-6"><button id="" class="btn-info btn-circle btn-lg mb-5" type="submit" name="test" value="3">Instituto de Ciencias Sociales y Administración</button></div>
+		
+		<div class="col-md-6"><button id="" class="btn-primary btn-circle btn-lg mb-5" type="submit" name="test" value="4">Instituto de Estudios Iniciales</button></div>
+
+	</form>
+</div>
 <!--	--------------------------------------
 	<div class="table-responsive">
 		<table class="table table-borderless">
@@ -47,7 +58,6 @@
   </tbody>
 </table>
 </div>
-
 -->
 <!--
 <div class="col-sm-6"><button id="" class="btn-danger btn-lg btn-block form-submit" >Instituto de Ingeniería y Agronomía</button></div>
