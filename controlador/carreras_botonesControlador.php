@@ -1,8 +1,8 @@
 <?php  
-	require_once "./model/botonesModelo.php";
+	require_once "./model/carreras_botonesModelo.php";
 
 
-	class botonesControlador extends botonesModelo
+	class carreras_botonesControlador extends carreras_botonesModelo
 	{
 
 		private $instituto;

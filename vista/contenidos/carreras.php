@@ -1,5 +1,5 @@
 <?php  
-	include "./controlador/botonesControlador.php";
+	include "./controlador/carreras_botonesControlador.php";
 
 	if (isset($_POST['test'])) {
 		$ah = $_POST['test'];
@@ -9,7 +9,7 @@
 		$ah = 0;
 	}
 	
-	$carreras = new botonesControlador();
+	$carreras = new carreras_botonesControlador();
 	#$res = $carreras->obtener_vista_carreras();
 	$carreras->traer_vista_carreras($ah);
 
