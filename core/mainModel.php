@@ -46,8 +46,7 @@
         
         }
         // RETORNA MATERIAS Y SU COMISION SIN REPETIR *PONER EL NOMBRE DEL PROFESOR AQUI PARA QUE NO SE REPITA
-        public function get_materias(){
-
+        public function get_materias($numero){
             $sql="select distinct m.nombre as materia,co.numero as comision,p.apellido as profesor
             from comision_completa c
             left join comision co on c.comision_id=co.id
@@ -56,14 +55,12 @@
             left join materia m on co.id_materia=m.id
             left join edificio e on a.id_edificio=e.id
             left join sede s on e.id_sede=s.id
-            ";
+            left join carrera ca on m.id_carrera=ca.id
+            where ca.id=".$numero;
             return $this->ejecutar_consulta_simple($sql);
-
-
         }
         // RETORNA LAS COMISIONES CON INFORMACION COMPLETA
-        public function get_materias_completo(){
-
+        public function get_materias_completo($numero){
             $sql="select c.dias_horarios,m.nombre as materia,co.numero as comision,p.apellido as profesor,a.nombre as aula,e.nombre as edificio,s.nombre as sede
             from comision_completa c
             left join comision co on c.comision_id=co.id
@@ -72,7 +69,8 @@
             left join materia m on co.id_materia=m.id
             left join edificio e on a.id_edificio=e.id
             left join sede s on e.id_sede=s.id
-            ";
+            left join carrera ca on m.id_carrera=ca.id
+            where ca.id=".$numero;
             return $this->ejecutar_consulta_simple($sql);
 
 

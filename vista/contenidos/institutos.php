@@ -19,10 +19,7 @@
 	<!-- enlaces de institutos -->
 	<div class="row mt-3">
 		<div class="col-md-6">
-		<form action="materias">
-		<button id="" class="btn-danger btn-circle btn-lg mb-5" >Instituto de Ingeniería y Agronomía</button>
-		
-		</form>
+		<button id="" class="btn-danger btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg " onclick="materias(1)" >Instituto de Ingeniería y Agronomía</button>
 		</div>
 		<div class="col-md-6"><button id="salud" class="btn-success btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg " onclick="materias(3)">Instituto de Ciencias de la Salud</button></div>
 		<div class="col-md-6"><button id="sociales" class="btn-info btn-circle btn-lg mb-5" data-toggle="modal" data-target=".bd-example-modal-lg "  onclick="materias(2)">Instituto de Ciencias Sociales y Administración</button></div>

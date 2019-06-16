@@ -1,23 +1,22 @@
 
 <?php
-require_once "./core/mainModel.php";
+$numero=$_POST['test'];
+// echo "este es mi numero",$numero;
+require_once '.\core\mainModel.php';
 $mate= new mainModel();
 // ARREGLO CON INFORMACION DE LAS MATERIAS Y SU COMISION
- $arreglo_mate_comi=$mate->get_materias();
+ $arreglo_mate_comi=$mate->get_materias($numero);
+
 // ARREGLO CON LA INFORMACION COMPLETA DE LAS COMISIONES
-$arreglo_comi_com=$mate->get_materias_completo();
 
-
-
+$arreglo_comi_com=$mate->get_materias_completo($numero);
 ?>
-
 <!-- RECORRE EL ARREGLO DE COMISIONES CON INFORMACION COMPLETA Y LOS PROYECTA -->
-<?php foreach($arreglo_mate_comi as $comision):?>
 <!-- ROW PRINCIPAL -->
+<?php foreach($arreglo_mate_comi as $comision):?>
 <div class="row py-4 container ml-1">
     <div class="col-md-3  fondo_materia ">
     <!-- ROW SECUNDARIO -->
-        
                 
                 <DIV class="d-flex flex-column justify-content-center h-100  align-items-center ">
                 <P CLASS="materia"><?php  echo $comision['materia'];?></P>
@@ -57,7 +56,5 @@ $arreglo_comi_com=$mate->get_materias_completo();
         <button type="button" class="btn btn-success btn-circle btn-lp"><P class="letrasCirculoMapa">MAPA</P></button>
         </div>
     </div>
-
-
 </div>
 <?php endforeach; ?> 
