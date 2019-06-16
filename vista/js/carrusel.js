@@ -93,6 +93,6 @@ function guardarID (listaCarreras){
 
 function filtrarMaterias (carrera, id){
 	carrera.addEventListener('click', function(){
-		alert("Estas buscando las materias del ID: " + id);
+//		alert("Estas buscando las materias del ID: " + id);
 	})
 }

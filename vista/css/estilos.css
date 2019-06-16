@@ -133,12 +133,137 @@ body{
 }
 
 
+/* RESPONSIVE DEL CARRUSEL - FALTA PARA CELULAR*/
 
-/*
 @media screen and (max-width: 1199px){
-	.boton-carrusel{
-		height: 50px;
+
+	.modal-header{
+		padding: 10px 10px 5px 10px;
 	}
+
+	.modal-header h2{
+		font-size: 30px;
+	}
+
+	.boton-institutos{
+		height: 72px;
+		font-size: 22px;
+		margin: 0px 0px 10px 0px;
+		padding: 0px 10px 0px 10px;
+	}
+
+	.contenedor-modal{
+		height: 500px;
+	}
+
+	.boton-volver{
+		height: 45px;
+	}
+
+	.row a h4 {
+		font-size:20px;
+	}
+
+	.boton-carreras{
+		width: 100%;
+		border-radius: 10px;
+		padding: 3px 15px 3px 15px;
+	}
+
 }
-*/
+
+@media screen and (max-width: 992px){
+
+	.modal-header{
+		padding: 10px 10px 5px 10px;
+	}
+
+	.modal-header h2{
+		font-size: 20px;
+	}
+
+	.boton-institutos{
+		height: 50px;
+		margin: 0px 0px 5px 0px;
+    	border-radius: 10px;
+    	padding: 0px 10px 0px 10px;
+		font-size: 18px;
+	}
+
+	.contenedor-modal{
+		padding-top: 0px;
+		height: 350px;
+	}
+
+	.boton-volver{
+		padding-top: 0px;
+		height: 20px;
+	}
+
+	.boton-volver button{
+		font-size: 12px;
+	}
+
+	.row a h4 {
+		font-size:15px;
+	}
+
+	.boton-carreras{
+		width: 100%;
+		border-radius: 10px;
+		padding: 0px 10px 0px 10px;
+	}
+
+
+}
+
+
+@media screen and (max-width: 768px){
+
+	.modal-title{
+		font-size: 15px;
+	}
+
+	.modal-header{
+		padding: 5px 5px 2px 5px;
+	}
+
+	.modal-header h2{
+		font-size: 15px;
+	}
+
+	.boton-institutos{
+		height: 32px;
+		margin: 0px 0px 4px 0px;
+    	border-radius: 10px;
+    	padding: 0px 5px 0px 5px;
+		font-size: 12px;
+	}
+
+	.contenedor-modal{
+		padding-top: 0px;
+		height: 250px;
+	}
+
+	.boton-volver{
+		padding-top: 0px;
+		height: 8px;
+	}
+
+	.boton-volver button{
+		font-size: 9px;
+	}
+
+	.row a h4 {
+		font-size:12px;
+	}
+
+	.boton-carreras{
+		width: 100%;
+		border-radius: 10px;
+		padding: 0px 5px 0px 5px;
+	}
+
+
+}
 

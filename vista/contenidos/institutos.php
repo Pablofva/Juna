@@ -11,7 +11,7 @@
             <div class="modal-dialog modal-lg modal-dialog-scrollable" role="document">
               <div class="modal-content contenedor-modal">
                 <div class="modal-header">
-                  <h5 class="modal-title">Seleccione el instituto</h5>
+                  <h2>Seleccione el instituto</h2>
                 </div>
                 <div class="modal-body">
                   <!-- Botones de Institutos -->
