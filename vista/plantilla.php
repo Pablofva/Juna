@@ -55,7 +55,7 @@
 	<!-- Pie de página --->
 			<?php include "vista/modulos/pie.php"; ?>
 
-	
+	<a color=white href=" ./index.php"><b> &#9996;amos a &#9996;olver</b></a>
 	</section>
 </body>
 </html>
