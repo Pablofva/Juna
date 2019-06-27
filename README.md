@@ -1,2 +1,0 @@
-# punaj
-Pizarra electronica unaj
