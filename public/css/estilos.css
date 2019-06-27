@@ -1,0 +1,41 @@
+.encabezado{
+    background-color: #0075A2;
+	border:1px;
+	height: 125px;
+	max-height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.wrapper{
+	background-color: lightgrey;
+	
+	
+}
+.btn-circle.btn-lg {
+    width: 290px;
+    height: 120px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 65px;
+  }
+	.btn-circle.btn-xl {
+    width: 170px;
+    height: 170px;
+    padding: 10px 16px;
+    border-radius: 85px;
+    font-size: 44px;
+    line-height: 1.33;
+}
+ 
+  .pie{
+	height: 120px;
+	background-color: #0075A2;	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
