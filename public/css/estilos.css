@@ -1,7 +1,8 @@
 .encabezado{
-    background-color: #0075A2;
+  background-color: #0075A2;
+  background-image: linear-gradient(#0075A2,lightgrey); /* Standard syntax (must be last) */
 	border:1px;
-	height: 125px;
+	height: 110px;
 	max-height: 100%;
 	color: white;
 	display: flex;
@@ -9,10 +10,13 @@
 	align-items: center;
 
 }
+#grad1 {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(red, yellow); /* Standard syntax (must be last) */
+}
 .wrapper{
 	background-color: lightgrey;
-	
-	
 }
 .btn-circle.btn-lg {
     width: 290px;
@@ -32,8 +36,9 @@
 }
  
   .pie{
-	height: 120px;
-	background-color: #0075A2;	
+  height: 110px;
+  background-color: #0075A2;	
+  background-image: linear-gradient(lightgrey,#0075A2);
 	display: flex;
 	justify-content: center;
 	align-items: center;

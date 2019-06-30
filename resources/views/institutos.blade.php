@@ -60,8 +60,6 @@
                 <h2>Nada</h2>
         @endswitch
     @endif
-
-
 </div>
 
 @endsection
