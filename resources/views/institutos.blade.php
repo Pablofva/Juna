@@ -37,29 +37,6 @@
                 </a>   
             </div>
     </div>
-
-    @foreach ($variables as $item)
-        
-    <a href="{{route('institutos', $item)}}" class="h4 text-danger">{{$item}}</a>
-
-    @endforeach
-
-    @if (empty($saludo))
-        <h2>La barra de inst esa vacía</h2>
-    @endif
-
-    @if (!empty($saludo))
-        @switch($saludo)
-            @case($saludo == 'Hola')
-                <h2>El saludo es {{ $saludo}}</h2>
-                @break
-            @case($saludo == 'Chau')
-                <h2>El saludo es {{ $saludo}}</h2>
-                @break
-            @default
-                <h2>Nada</h2>
-        @endswitch
-    @endif
 </div>
 
 @endsection

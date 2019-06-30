@@ -5,7 +5,7 @@ input[type=text] {
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    background-color:rgba(f,f,f,0.6);
+    background-color:rgba(255,255,255,0.4);
     background-image: url(buscaicono.png);
     background-position: 10px 17px;
     background-repeat: no-repeat;
@@ -17,21 +17,22 @@ input[type=text] {
 }
 
 input[type=text]:focus {
+  font-size: 30px;
   outline:9px solid  #4444c3ff;
-  width: 369%;
+  width: 100%;
   padding: .5em 5em;
 }
 ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color:(0,0,blue,0.6);
+  color:(255,255,255,0.7);
   font-size: 30px;
-  text-shadow: 3px 2px 9px black;
+  text-shadow: 2px 2px 5px rgb(9, 67, 255);
   opacity: 1; /* Firefox */
 }
 
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
-  color: red;
+  color:(255,255,255,0.7);;
 }
 
 ::-ms-input-placeholder { /* Microsoft Edge */
-  color: red;
+  color:(255,255,255,0.7);;
 }

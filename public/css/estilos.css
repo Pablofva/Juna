@@ -2,12 +2,11 @@
   background-color: #0075A2;
   background-image: linear-gradient(#0075A2,lightgrey); /* Standard syntax (must be last) */
 	border:1px;
-	height: 110px;
+	height: 150px;
 	max-height: 100%;
 	color: white;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+
 
 }
 #grad1 {
