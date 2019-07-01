@@ -1,2 +1,2 @@
-# punaj
+# Juna
 Pizarra electronica unaj
