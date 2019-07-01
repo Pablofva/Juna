@@ -1,0 +1,147 @@
+body{
+  background: url("https://i.imgur.com/0jG1t76.jpg") no-repeat center center fixed;
+  background-size: 100%;
+}
+
+.encabezado{
+	border:1px;
+	height: 125px;
+	max-height: 100%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.btn-circle.btn-lg {
+    width: 290px;
+    height: 120px;
+    padding: 10px 16px;
+    font-size: 18px;
+    line-height: 1.33;
+    border-radius: 65px;
+  }
+	.btn-circle.btn-xl {
+    width: 170px;
+    height: 170px;
+    padding: 10px 16px;
+    border-radius: 85px;
+    font-size: 44px;
+    line-height: 1.33;
+}
+ 
+  .pie{
+	height: 120px;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+.fondo_materia{
+  background-color: aliceblue;
+}
+/* proyeccion de materias */
+.materia{
+  font: oblique bold 120% cursive;
+  font-size: 20px;
+}
+.comision{
+  font-size: 11px;
+  margin-top: 0;
+margin-bottom: 0;
+}
+.fondito{
+  background-color: #ff502f;
+  color: aliceblue;
+}
+.btn-circle.btn-lp {
+  width: 50px;
+  height: 50px;
+  padding: 1px 1px;
+  font-size: 10px;
+  line-height: 1.33;
+  border-radius: 25px;
+}
+.letrasCirculoMapa{
+  font: oblique bold 120% cursive;
+  font-size: 11px;
+  margin-top: 0;
+margin-bottom: 0;
+}
+
+/*Estilo login*/
+body{
+  margin:0;
+  padding: 0;
+  background-size: cover;
+  font-family: sans-serif;
+  height: 100vh;
+}
+
+.login-box{
+  width:320px;
+  height: 420px;
+  background:transparent;
+  color:#fff;
+  top:50%;
+  left: 50%;
+  position:absolute;
+  transform: translate(-50%,-50%);
+  box-sizing: border-box;
+  padding: 70px 30px;
+}
+
+.login-titulo{
+  margin: 0;
+  padding: 0 0 20px;
+  text-align: center;
+  font-size: 22px;
+}
+
+.login-box.control-label{
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  display: block;
+}
+
+.login-box input{
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"]{
+  border:none;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #fff;
+  font-size: 16px;
+}
+
+.login-box input[type="submit"]{
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #b80f22;
+  color: #fff;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.login-box a{
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 20px;
+  color: darkgrey;
+}
+
+.login-box a:hover{
+  color: #fff;
+}
+
+
