@@ -1,0 +1,58 @@
+body{        
+        padding-top: 60px;
+        padding-bottom: 40px;
+    }
+  .fixed-header, .fixed-footer{
+        width: 100%;
+        position: fixed;        
+        background: #333;
+        padding: 10px 0;
+        color: #fff;
+    }
+    .fixed-header{
+        top: 0;
+	z-index: 9999;
+        text-align: center;
+    }
+    .fixed-auxheader{
+        top: 1;
+	z-index: 9999;
+        text-align: center;
+    }
+    .fixed-footer{
+        bottom: 0;
+    }
+    .container{
+	
+        width: 100%;
+        margin: 0 auto; /* Center the DIV horizontally */
+    }
+  
+
+
+.btn-circle.btn-lg {
+    width: 290px;
+    
+height: 120px;
+    padding: 10px 16px;
+    
+font-size: 18px;
+    line-height: 1.33;
+    
+border-radius: 65px;
+ 
+z-index: 1; }
+	
+
+.btn-circle.btn-xl {
+    width: 170px;
+    
+height: 170px;
+    padding: 10px 16px;
+    
+border-radius: 85px;
+    
+font-size: 44px;
+    
+line-height: 1.33;
+}
