@@ -7,7 +7,7 @@
 <table class="table">
   <thead>
     <tr>
-      <th scope="col">Materia</th>
+      <th scope="col">Edificio</th>
       <th scope="col">Aula</th>
       <th scope="col">Información</th>
       <th scope="col">Piso</th>
@@ -21,7 +21,7 @@
   	@foreach($aulas as $aula)
 
     <tr>
-      <td></td>
+      <td> {{$aula->edificio->nombre}}</td>
       <td> {{$aula->numero}} </td>
       <td> {{$aula->nombre}} </td>
       <td> {{$aula->piso}} </td>

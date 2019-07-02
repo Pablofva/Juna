@@ -13,13 +13,25 @@ class CreateAulasTable extends Migration
      */
     public function up()
     {
+        Schema::enableForeignKeyConstraints();
         Schema::create('aulas', function (Blueprint $table) {
-            $table->bigIncrements('id');
-            $table->string('numero');
+            $table->increments('id');
+            $table->integer('numero');
             $table->string('nombre');
-            $table->string('id_edificio');
             $table->string('piso');
+
+            
+
+            
+        });
+
+        Schema::table('aulas', function (Blueprint $table) {
+
+            $table->integer('edificio_id')->unsigned();
             $table->timestamps();
+            
+            $table->foreign('edificio_id')->references('id')->on('edificios');
+
         });
     }
 

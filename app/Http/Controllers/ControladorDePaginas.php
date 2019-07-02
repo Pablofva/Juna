@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App;
 
+
 class ControladorDePaginas extends Controller
 {
  	public function inicio(){
@@ -36,11 +37,20 @@ class ControladorDePaginas extends Controller
  	}
 
  	public function informatica(){
- 		return view('pruebadosinformatica');
+ 		$comisiones=App\Comision::all();
+ 		return view('pruebadosinformatica',compact('comisiones'));
  	}
 
  	public function mapas(){
- 		$aulas = App\Aula::all();
+ 		
+ 		$edificios= App\Edificio::where('nombre','Enrique Mosconi' )->get();
+
+ 		
+
+ 		$aulas = App\Aula::where('numero', 1)->get();
+
  		return view('mapas',compact('aulas'));
  	}
+
+ 	
 }	
