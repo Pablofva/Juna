@@ -37,4 +37,15 @@ class PagesController extends Controller
 
         return view('home', compact('notas', 'nota'));
     }
+
+    public function tablas_detalle($id = null)
+    {
+        //$notas = DB::table('comision_completa')->get();
+
+        return view('tablas');
+    }
+    public function tablas()
+    {
+        return view('tablas');
+    }
 }

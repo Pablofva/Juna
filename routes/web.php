@@ -15,16 +15,33 @@
 //     return view('welcome');
 // });
 
- Route::get('/', 'PagesController@inicio')->name('inicio');
 
 // Route::get('punaj/{item?}', function ($item = "") {
 //     return "Pantalla principal: ". $item;
 // })->where('item', '[0-9]+');
 
 // Route::get('/institutos', 'PagesController@institutos')->name('institutos');
-Route::get('home', 'PagesController@home');
-Route::get('home/{id?}', 'PagesController@home_detalle')->name('home');
+
 // Route::view('/institutos','institutos')->name('institutos');
+
+
+
+Route::get('/', 'PagesController@inicio')->name('inicio');
+
+
+Route::get('institutos', 'PagesController@institutos')->name('institutos');
+
+
+
+
+
+Route::get('home', 'PagesController@home');
+
+Route::get('home/{id?}', 'PagesController@home_detalle')->name('home');
+
+Route::get('tablas', 'PagesController@tablas');
+
+Route::get('tablas/{id?}', 'PagesController@tablas_detalle')->name('tablas');
 
 Route::get('institutos/{saludo?}', 'PagesController@institutos_s')->name('institutos');
 

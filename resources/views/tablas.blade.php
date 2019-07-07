@@ -12,48 +12,9 @@
   </head>
   <body>
     <div class="container my-4">
-        <h1 class="display-4"> Notas </h1>
-        <table class="table">
-            <thead>
-              <tr>
-                <th scope="col">#id</th>
-                <th scope="col">Nombre</th>
-                <th scope="col">Descripcion</th>
-                <th scope="col">Handle</th>
-              </tr>
-            </thead>
-            <tbody>
-                @foreach ($notas as $item)
-
-              <tr>
-                <th scope="row">{{$item->id}}</th>
-                <td>
-                <a href="{{ route('home', $item) }}">{{$item->nombre}}</a>
-                </td>
-                <td>{{$item->descripcion}}</td>
-                <td>@mdo</td>
-              </tr>
-
-                @endforeach
-            </tbody>
-          </table>
-
-        @if (!empty($nota))
-            @switch($nota)
-                @case($nota->id == '1')
-                    <h2>{{ $nota->nombre}} se sacó una {{ $nota->descripcion }}</h2>
-                    @break
-                @case($nota->id == '2')
-                    <h2>{{ $nota->nombre}} se sacó una {{ $nota->descripcion }}</h2>
-                    @break
-                @default
-                    <h2>Nada</h2>
-            @endswitch
-        @endif
-    </div>
-
-
-    <div class="container my-4">
+        @php
+            $notas = App\Resultados::all();
+        @endphp
       <h1 class="display-4"> Notas </h1>
       <table class="table">
           <thead>
@@ -61,33 +22,31 @@
               <th scope="col">#id</th>
               <th scope="col">Nombre</th>
               <th scope="col">Descripcion</th>
-              <th scope="col">Handle</th>
-            </tr>
           </thead>
           <tbody>
               @foreach ($notas as $item)
 
             <tr>
-              <th scope="row">{{$item->id}}</th>
+              <th scope="row">{{$item->id_instituto}}</th>
               <td>
-              <a href="{{ route('home', $item) }}">{{$item->nombre}}</a>
+              <a href="">{{$item->id_carreras}}</a>
               </td>
-              <td>{{$item->descripcion}}</td>
-              <td>@mdo</td>
+              <td>{{$item->id_instituto}}</td>
+              <td></td>
             </tr>
               @endforeach
           </tbody>
         </table>
-        @php
+        {{-- @php
             $notass = DB::table('notas')->get();
         @endphp
             @foreach ($notass as $item)
 
               <h1>Lo obtenido es: {{ $item->nombre}}</h1>
                 
-            @endforeach
+            @endforeach --}}
 
-      @if (!empty($nota))
+      {{-- @if (!empty($nota))
           @switch($nota)
               @case($nota->id == '1')
                   <h2>{{ $nota->nombre}} se sacó una {{ $nota->descripcion }}</h2>
@@ -98,7 +57,7 @@
               @default
                   <h2>Nada</h2>
           @endswitch
-      @endif
+      @endif --}}
   </div>
 
     <!-- Optional JavaScript -->
