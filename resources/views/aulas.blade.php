@@ -6,7 +6,7 @@
 
 <div class="row">
     <div class="col-md-6 py-1 ">
-        <a href="" class="btn btn-ingenieria botones-inicio">
+        <a href="" class="btn btn-ingenieria botones-inicio" id="ingenieria">
             Ingeniería y Agronomía
         </a>
     </div>
@@ -25,6 +25,13 @@
             Estudios Iniciales
         </a>
      </div>
+
 </div>
+
+
+<!-- Este script cambia el color de la cabecera - se podría usar un color distinto para cada instituto -->
+<script>
+    document.getElementById("fondo-cabecera").style.backgroundColor = "#3B76DB";
+</script>
 
 @endsection

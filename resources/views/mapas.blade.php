@@ -45,5 +45,7 @@
         </div>
     </div>
         
-    <script type="text/javascript" src="js/popup.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+
 @endsection

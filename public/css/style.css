@@ -12,15 +12,15 @@ html, body {
     height: 100vh;
 }
 
-.fondo-cabecera-pie{
-    background-color: #1d99d5;
-}
-
 .fondo-contenido{
     background-color: rgba(256, 256, 256, .8);
 }
 
 /* ---- Estilos: pie de pagina---- */
+
+.fondo-pie{
+  background-color: #353535;
+}
 
 .nav-item a{
   color: #fff;
@@ -36,7 +36,7 @@ html, body {
 
 .pie-pie{
   border-top: 1px solid #fff;
-  color: #fff;
+  color: #1d99d5;
 }
 
 .juna{
@@ -48,6 +48,10 @@ html, body {
 
 
 /* ---- Estilos: Cabecera ---- */
+
+.fondo-cabecera{
+  background-color: #1d99d5;
+}
 
 .nav-item{
     border-right: 1px solid #fff;

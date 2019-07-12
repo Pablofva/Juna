@@ -5,19 +5,19 @@
     </head>
     <body>
         
-        <section class="fondo-cabecera-pie">
+        <section class="fondo-cabecera" id="fondo-cabecera">
             <div class="container">
                 @include('modulos/cabecera')
             </div>
         </section>
 
-        <section class="text-center pb-5 fondo-contenido">
+        <section class="text-center pb-5 fondo-contenido" id="contenido">
             <div class="container">
                 @yield('content')
             </div>
         </section>
 
-        <section class="fondo-cabecera-pie">
+        <section class="fondo-pie" id="fondo-pie">
             <div class="container">
                 @include('modulos/pie')
             </div>
