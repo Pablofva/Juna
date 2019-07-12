@@ -14,10 +14,12 @@ var ingenieria = document.getElementById('ingenieria'),
 	iniciales = document.getElementById('iniciales'),
 
 	contenido = document.getElementById('contenido-body'),
-	contenidoMate = document.getElementById('contenidoMate-body'),
+	// contenidoMate = document.getElementById('contenidoMate-body'),
+	//contenidoMate = document.getElementById('myUL'),
+	contenidoMate = document.getElementById('mita'),
 	imagen = document.getElementById('selector-imagen');
 function carrerasAjax(id){
-		// console.log('dentro de la funcion');
+		 console.log('dentro de la funcion');
 		const miajax= new XMLHttpRequest();
 		var url='http://juna.test/listarCarreras/'+id;
 		 console.log(url);
@@ -78,7 +80,7 @@ function carrerasAjax(id){
 					let datos=JSON.parse(this.responseText);
 					console.log(datos);
 					agregarMaterias(contenidoMate,datos);
-					// guardarID(datos);
+					// guardarID(datos);ggg
 					return datos;
 				}
 				// console.log('no llegue a entrar a materias');
@@ -92,9 +94,14 @@ function carrerasAjax(id){
 			contenido.innerHTML='';
 			for(let item of listaCarreras){
 				contenido.innerHTML +=`
-				<form id="form1" action="{{route('listarCarreras')}}/{{$item->id}}" method="GET">
-				</form>
+				<tr>
+				<td>
 				<a href="#carousel" class="carousel-control-next boton-carreras" data-slide="next" onclick="ajaxMaterias(${item.id})"><h4 class="boton-carreras">${item.nombre}</h4></a>
+				</td>
+				<td>
+				<h4 class="boton-carreras">${item.anio}</h4>
+				</td>
+				</tr>
 				`
 			}
 			

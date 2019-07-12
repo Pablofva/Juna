@@ -61,6 +61,7 @@
                 <div class="modal-body">
                   <div class="row" id="contenido-body">
                     <!-- AQUI SE GENERAN LAS CARRERAS DESDE JAVASCRIPT -->
+
                  </div>
                </div>
                <div class="modal-footer">
@@ -80,11 +81,36 @@
             <div class="modal-content contenedor-modal">
               <div class="modal-header">
                 <h5 class="modal-title">Seleccione la materia</h5>
+                
               </div>
               <div class="modal-body">
-                    <div class="row" id="contenidoMate-body">
-                        <!-- AQUI SE GENERAN LAS MATERIAS DESDE JAVASCRIPT -->
+              <form class="form-inline">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Materias</span>
+                      </div>
+                      <input type="text" id="myInput" onkeyup="myFunction()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
+                  </form>
+                  <!-- <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name"> -->
+                     <!-- <ul id="myUL"> -->
+                   <!-- <div class="row" id="contenidoMate-body"> -->
+                        <!-- AQUI SE GENERAN LAS MATERIAS DESDE JAVASCRIPT -->
+                        <table id="myTable" class="table table-hover">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">Materia</th>
+                                    <th scope="col">Año</th>
+                                    
+                                  </tr>
+                                </thead>
+                                <tbody id="mita">
+                                 
+                                </tbody>
+                              </table>
+                  
+                          <!-- </ul> -->
+                    <!-- </div> -->
               </div>
               <div class="modal-footer">
                 <a class="carousel-control-prev boton-volver" href="#carousel" role="button" data-slide="prev"><button type="button" id="volver" class="btn btn-primary" data-toggle="modal" data-target="">Volver al inicio</button>
