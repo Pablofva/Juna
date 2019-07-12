@@ -81,14 +81,12 @@ html, body {
 	  width: 100%;
     height: 120px;
     margin: 20px 0px 20px 0px;
-    font-size: 30px;
-    line-height: 1.33;
+    font-size: 25px;
     border-radius: 20px;
     line-height: 110px;
     opacity: 0;
     animation: entradaBotones 1s ease 1s forwards;
 }
-
 
 
 /* ---- Animaciones ---- */
@@ -129,31 +127,31 @@ html, body {
 /* ---- BOTONES ---- */
 
 .btn-mapas { 
-    color: #ffffff; 
-    background-color: #DB803B; 
-    border-color: #FA862D; 
-  } 
-   
-  .btn-mapas:hover, 
-  .btn-mapas:focus, 
-  .btn-mapas:active, 
-  .btn-mapas.active, 
-  .open .dropdown-toggle.btn-mapas { 
-    color: #ffffff; 
-    background-color: #B54E00; 
-    border-color: #FA862D; 
-  } 
-   
-  .btn-mapas:active, 
-  .btn-mapas.active, 
-  .open .dropdown-toggle.btn-mapas { 
-    background-image: none; 
-  } 
-   
-  .btn-mapas .badge { 
-    color: #DB803B; 
-    background-color: #ffffff; 
-  }
+  color: #ffffff; 
+  background-color: #A6379F; 
+  border-color: #A6379F; 
+} 
+ 
+.btn-mapas:hover, 
+.btn-mapas:focus, 
+.btn-mapas:active, 
+.btn-mapas.active, 
+.open .dropdown-toggle.btn-mapas { 
+  color: #ffffff; 
+  background-color: #85007C; 
+  border-color: #A6379F; 
+} 
+ 
+.btn-mapas:active, 
+.btn-mapas.active, 
+.open .dropdown-toggle.btn-mapas { 
+  background-image: none; 
+} 
+ 
+.btn-mapas .badge { 
+  color: #A6379F; 
+  background-color: #ffffff; 
+}
 
   .btn-libros { 
     color: #ffffff; 
@@ -181,7 +179,6 @@ html, body {
     color: #9EDB3B; 
     background-color: #ffffff; 
   }
-
 
 
   .btn-aulas { 
@@ -236,5 +233,123 @@ html, body {
    
   .btn-oficinas .badge { 
     color: #3BD6DB; 
+    background-color: #ffffff; 
+  }
+
+
+/* ---- BOTONES de institutos con sus colores correspondientes ---- */
+
+  .btn-ingenieria { 
+    color: #ffffff; 
+    background-color: #A63321; 
+    border-color: #A63321; 
+  } 
+   
+  .btn-ingenieria { 
+    color: #ffffff; 
+    background-color: #A63321; 
+    border-color: #A63321; 
+  } 
+   
+  .btn-ingenieria:hover, 
+  .btn-ingenieria:focus, 
+  .btn-ingenieria:active, 
+  .btn-ingenieria.active, 
+  .open .dropdown-toggle.btn-ingenieria { 
+    color: #ffffff; 
+    background-color: #851200; 
+    border-color: #A63321; 
+  } 
+   
+  .btn-ingenieria:active, 
+  .btn-ingenieria.active, 
+  .open .dropdown-toggle.btn-ingenieria { 
+    background-image: none; 
+  } 
+   
+  .btn-ingenieria .badge { 
+    color: #A63321; 
+    background-color: #ffffff; 
+  }
+
+  .btn-salud { 
+    color: #ffffff; 
+    background-color: #8AB03F; 
+    border-color: #8AB03F; 
+  } 
+   
+  .btn-salud:hover, 
+  .btn-salud:focus, 
+  .btn-salud:active, 
+  .btn-salud.active, 
+  .open .dropdown-toggle.btn-salud { 
+    color: #ffffff; 
+    background-color: #5D8C00; 
+    border-color: #8AB03F; 
+  } 
+   
+  .btn-salud:active, 
+  .btn-salud.active, 
+  .open .dropdown-toggle.btn-salud { 
+    background-image: none; 
+  } 
+
+  .btn-salud .badge { 
+    color: #8AB03F; 
+    background-color: #ffffff; 
+  }
+
+  .btn-iniciales { 
+    color: #ffffff; 
+    background-color: #F39231; 
+    border-color: #F39231; 
+  } 
+   
+  .btn-iniciales:hover, 
+  .btn-iniciales:focus, 
+  .btn-iniciales:active, 
+  .btn-iniciales.active, 
+  .open .dropdown-toggle.btn-iniciales { 
+    color: #ffffff; 
+    background-color: #D46A00; 
+    border-color: #F39231; 
+  } 
+   
+  .btn-iniciales:active, 
+  .btn-iniciales.active, 
+  .open .dropdown-toggle.btn-iniciales { 
+    background-image: none; 
+  } 
+   
+  .btn-iniciales .badge { 
+    color: #F39231; 
+    background-color: #ffffff; 
+  }
+
+  .btn-sociales { 
+    color: #ffffff; 
+    background-color: #283B8A; 
+    border-color: #283B8A; 
+  } 
+   
+  .btn-sociales:hover, 
+  .btn-sociales:focus, 
+  .btn-sociales:active, 
+  .btn-sociales.active, 
+  .open .dropdown-toggle.btn-sociales { 
+    color: #ffffff; 
+    background-color: #021563; 
+    border-color: #283B8A; 
+  } 
+   
+  .btn-sociales:active, 
+  .btn-sociales.active, 
+  .open .dropdown-toggle.btn-sociales { 
+    background-image: none; 
+  } 
+   
+   
+  .btn-sociales .badge { 
+    color: #283B8A; 
     background-color: #ffffff; 
   }
