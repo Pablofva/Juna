@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <h1 class="letra-titulo pt-3"><strong>Mapas de la universidad</strong></h1>
+    <h1 class="letra-titulo pt-5 pb-4"><strong>Mapas de la universidad</strong></h1>
 
     <div class="row">
             <div class="col-md-6">

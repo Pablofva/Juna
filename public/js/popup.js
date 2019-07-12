@@ -10,11 +10,10 @@ var abrirBuffet = document.getElementById('buffet'),
 
 	imagen = document.getElementById('selector-imagen');
 
-
 // Se agrega una imagen segun donde se haya hecho un click
 
 abrirBuffet.addEventListener('click', function(){
-	imagen.setAttribute('src', 'img/buffet.jpg');
+	imagen.setAttribute('src', 'vista/img/buffet.jpg');
 })
 
 abrirSala.addEventListener('click', function(){
