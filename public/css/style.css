@@ -61,6 +61,12 @@ html, body {
     border-right:none;
 }
 
+.nav-item .nav-link img{
+    width: 164px;
+    height: 57px;
+    padding-left: 0px;
+}
+
 
 /* ---- Estilos: Inicio y paginas ---- */
 

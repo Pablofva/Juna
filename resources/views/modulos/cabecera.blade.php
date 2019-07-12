@@ -3,7 +3,7 @@
     <div class="collapse navbar-collapse">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="nav-link" href="{{ Route('inicio') }}"><img src="img/logo-unaj.png" alt="" width="164" height="57"></a>
+                <a class="nav-link" href="{{ Route('inicio') }}"><img src="img/logo-unaj.png" alt=""></a>
             </li>
             <li class="nav-item">
                 <img class="nav-link" src="img/logo-juna.png" alt="JUNA">
