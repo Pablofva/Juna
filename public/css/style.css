@@ -128,8 +128,8 @@ html, body {
 
 .btn-mapas { 
   color: #ffffff; 
-  background-color: #A6379F; 
-  border-color: #A6379F; 
+  background-color: #C94545; 
+  border-color: #C94545; 
 } 
  
 .btn-mapas:hover, 
@@ -138,8 +138,8 @@ html, body {
 .btn-mapas.active, 
 .open .dropdown-toggle.btn-mapas { 
   color: #ffffff; 
-  background-color: #85007C; 
-  border-color: #A6379F; 
+  background-color: #AD1111; 
+  border-color: #C94545; 
 } 
  
 .btn-mapas:active, 
@@ -149,7 +149,7 @@ html, body {
 } 
  
 .btn-mapas .badge { 
-  color: #A6379F; 
+  color: #C94545; 
   background-color: #ffffff; 
 }
 
