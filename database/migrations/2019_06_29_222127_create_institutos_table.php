@@ -16,7 +16,7 @@ class CreateInstitutosTable extends Migration
         Schema::create('institutos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nombre');
-            $table->timestamps();
+           
             
         });
     }

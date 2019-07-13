@@ -12,5 +12,7 @@ class Aula extends Model
     {
     	return $this->belongsTo(Edificio::class);
     }
+
+    public $timestamps = false;
 }
 

@@ -11,14 +11,10 @@ body{
     }
     .fixed-header{
         top: 0;
-	z-index: 9999;
+	z-index: 2;
         text-align: center;
     }
-    .fixed-auxheader{
-        top: 1;
-	z-index: 9999;
-        text-align: center;
-    }
+  
     .fixed-footer{
         bottom: 0;
     }

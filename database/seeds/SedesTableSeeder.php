@@ -1,7 +1,8 @@
 <?php
 
 use Illuminate\Database\Seeder;
-
+use Illuminate\Support\Facades\DB;
+use App\Sede;
 class SedesTableSeeder extends Seeder
 {
     /**
@@ -11,6 +12,13 @@ class SedesTableSeeder extends Seeder
      */
     public function run()
     {
-        factory(App\Sede::class, 1)->create();
+    	
+
+    	Sede::create([
+    		'nombre'=> 'Central',
+    		'calleynum' => 'Av. Calchaquí 6200',
+    		'localidad' => ' Florencio Varela'
+    	]);
+    	
     }
 }

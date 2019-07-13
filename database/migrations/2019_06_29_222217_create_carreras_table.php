@@ -22,7 +22,7 @@ class CreateCarrerasTable extends Migration
         Schema::table('carreras', function (Blueprint $table) {
 
             $table->integer('instituto_id')->unsigned();
-            $table->timestamps();
+         
             $table->foreign('instituto_id')->references('id')->on('institutos');
 
         });

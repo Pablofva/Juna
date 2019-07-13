@@ -17,8 +17,10 @@ class CreateComisionsTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('horario');
-            $table->string('horariodos');
-            $table->timestamps();
+            $table->string('horariodos')->nullable();
+            $table->string('dia');
+            $table->string('diados')->nullable();
+            
            
             
         });

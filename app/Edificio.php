@@ -10,6 +10,6 @@ class Edificio extends Model
     {
     	return $this->belongsTo(Sede::class);
     }
-
+    public $timestamps = false;
     
 }

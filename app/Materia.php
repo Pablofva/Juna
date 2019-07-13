@@ -8,9 +8,9 @@ class Materia extends Model
 {
     public function carrera()
     {
-    	return $this->belongsToMany(Carrera::class);
+    	return $this->belongsTo(Carrera::class);
     }
-
+    public $timestamps = false;
    
 
     

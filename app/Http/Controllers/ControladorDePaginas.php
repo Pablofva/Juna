@@ -21,7 +21,12 @@ class ControladorDePaginas extends Controller
  	}
 
  	public function ingenieria(){
- 		return view('pruebadosingenieria');
+
+ 		$id= App\Carrera::where('nombre','Ingenieria en Informatica')->value('id');
+
+ 		$materias=App\Materia::where('carrera_id', $id)->get();
+
+ 		return view('pruebadosingenieria',compact('materias'));
  	}
 
  	public function salud(){
@@ -36,21 +41,26 @@ class ControladorDePaginas extends Controller
  		return view('pruebadossociales');
  	}
 
- 	public function informatica(){
- 		$comisiones=App\Comision::all();
+ 	public function informatica($materia){
+ 		
+
+
+		$comisiones=App\Comision::where('materia_id',$materia)->get();
+		
  		return view('pruebadosinformatica',compact('comisiones'));
+
  	}
 
  	public function mapas(){
  		
- 		$edificios= App\Edificio::where('nombre','Enrique Mosconi' )->get();
+ 		$edificio= App\Edificio::where('nombre','Enrique Mosconi' )->value('id');
 
- 		
-
- 		$aulas = App\Aula::where('numero', 1)->get();
+ 		$aulas = App\Aula::where('edificio_id', $edificio)->get();
 
  		return view('mapas',compact('aulas'));
  	}
+
+ 	
 
  	
 }	

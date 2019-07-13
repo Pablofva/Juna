@@ -10,4 +10,6 @@ class Sede extends Model
     {
     	return $this->hasMany(Edificio::class);
     }
+
+    public $timestamps = false;
 }

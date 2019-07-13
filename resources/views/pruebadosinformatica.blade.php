@@ -7,7 +7,10 @@
 		<div class="fixed-auxheader">
         <div class="container">
             <nav>
-                <h2> Ingeneria en Informática  </h2>
+            	@foreach($comisiones as $comision)
+                <h2> {{$comision->materia->nombre}} </h2>
+                @break
+                @endforeach
             </nav>
         </div>
     </div>
@@ -27,119 +30,39 @@
 </div>
 <br/>
 
-<form>
-	<div class="form-row">
+<table id="comisiones" class="table">
+    <thead>
 
-		<div class="col">
-			<input type="text" class="form-control" placeholder="Nombre de la Materia">
-		</div>
-	    
-		<button type="button" class="btn btn-info btn-xs "><i class="fa fa-search" aria-hidden="true"></i> Buscar</button>
+        <tr>
+            <th>Comision</th>
+            <th>Aula</th>
+            <th>Horario</th>
+            <th>Segundo Horario</th>
+            <th>Mapa</th>
+            <th>Reportar</th>
 
-	</div>
-</form><br/>
+        </tr>
+    </thead>
+     <tbody>
+        @foreach($comisiones as $comision)
+        <tr>
+             <td>{{ $comision->nombre }}</td>
+             <td>{{ $comision->aula->numero }}</td>
+             <td>{{ $comision->horario }}</td>
+             <td>{{ $comision->horariodos }}</td>
+             <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#mapa">
+		  		<i class="fa fa-map-signs" aria-hidden="true"></i> Ubicación</button></td>
+		     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#desactualizada">
+		  		<i class="fa fa-ban" aria-hidden="true"></i> Aula Desactualizada</button></td>
+		    
+           	
+             
+        </tr>
+        @endforeach
 
-<button type="button" class="btn btn-info btn-xs "><i class="fa fa-search" aria-hidden="true"></i> Año de Carrera</button>
-<button type="button" class="btn btn-info btn-xs "><i class="fa fa-search" aria-hidden="true"></i> Cuatrimestre</button>
+    </tbody>
 
-<div class="col-md-12">
-	<br/>
-</div>
-
-
-<table class="table">
- <thead>
-    <tr>
-    	<th scope="col">Comisión</th>
-      <th scope="col">Materia</th>
-      <th scope="col">Aula</th>
-      <th scope="col">Horario</th>
-      <th scope="col">Segundo Horario</th>
-      <th scope="col">Piso</th>
-      <th scope="col">Mapa</th>
-      <th scope="col">Reportar</th>
-    </tr>
-
-  </thead>
-  <tbody>
-
-  	@foreach($comisiones as $comision)
-
-    <tr>
-    <td> {{$comision->nombre}}</td>
-      <td> {{$comision->materia->nombre}}</td>
-      <td> {{$comision->aula->numero}} </td>
-      <td> {{$comision->horario}} </td>
-      <td> {{$comision->horariodos}} </td>
-      <td> {{$comision->aula->piso}} </td>
-      <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#mapa">
-  		<i class="fa fa-map-signs" aria-hidden="true"></i> Ubicación</button></td>
-      <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#desactualizada">
-  		<i class="fa fa-ban" aria-hidden="true"></i> Aula Desactualizada</button></td>
-    </tr>
-
-    <!-- Modal Mapa -->
-		<div class="modal fade" id="mapa" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-lg modal-dialog-scrollable"  role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel"> Ubicación</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		      	
-				<div class="card">
-				  <div class="card-body">
-				    <h5 class="card-title">{{$comision->aula->edificio->nombre}}</h5>
-				    <p class="card-text">Subsuelo: Aulas 01 a 07
-											Planta Baja: Aulas 16-17 / 52 a 55
-											Primer Piso: Aulas 120 a 140 
-											Segundo Piso: Aulas 205 a 218
-											Tercer Piso: Aulas 302 a 318 
-											Cuarto Piso: Aulas 407 a 420
-					</p>
-				  </div>
-				  <img src="mosconi.jpg" class="card-img-top" alt="...">
-				</div>
-		        
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-
-		<!-- Modal Aula Desactualizada -->
-		<div class="modal fade" id="desactualizada" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		  <div class="modal-dialog modal-dialog-centered" role="document">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <h5 class="modal-title" id="exampleModalLabel">Reportar Aula Desactualizada</h5>
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-		          <span aria-hidden="true">&times;</span>
-		        </button>
-		      </div>
-		      <div class="modal-body">
-		        Aca va la elección de aulas
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-		        <button type="button" class="btn btn-primary">Notificar</button>
-		      </div>
-		    </div>
-		  </div>
-		</div>
-
-
-    @endforeach
-
-  </tbody>
 </table>
-</section>
 
 
 @endsection

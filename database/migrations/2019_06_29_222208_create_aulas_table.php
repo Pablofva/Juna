@@ -17,8 +17,8 @@ class CreateAulasTable extends Migration
         Schema::create('aulas', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('numero');
-            $table->string('nombre');
-            $table->string('piso');
+            $table->string('nombre')->nullable();
+            $table->string('piso')->nullable();
 
             
 
@@ -28,7 +28,6 @@ class CreateAulasTable extends Migration
         Schema::table('aulas', function (Blueprint $table) {
 
             $table->integer('edificio_id')->unsigned();
-            $table->timestamps();
             
             $table->foreign('edificio_id')->references('id')->on('edificios');
 

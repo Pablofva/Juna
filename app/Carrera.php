@@ -11,8 +11,5 @@ class Carrera extends Model
     	return $this->belongsTo(Instituto::class);
     }
 
-    public function materias()
-    {
-    	return $this->belongsToMany(Materia::class);
-    }
+    public $timestamps = false;
 }

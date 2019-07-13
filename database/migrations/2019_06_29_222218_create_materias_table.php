@@ -17,7 +17,15 @@ class CreateMateriasTable extends Migration
             $table->increments('id');
             $table->string('nombre');
             $table->string('anio');
-            $table->timestamps();
+           
+        });
+
+         Schema::table('materias', function (Blueprint $table) {
+            
+            
+            $table->integer('carrera_id')->unsigned();
+            $table->foreign('carrera_id')->references('id')->on('carreras');
+
         });
     }
 

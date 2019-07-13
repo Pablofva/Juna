@@ -18,7 +18,7 @@ class CreateSedesTable extends Migration
             $table->string('nombre');
             $table->string('calleynum');
             $table->string('localidad');
-            $table->timestamps();
+           
             
         });
     }

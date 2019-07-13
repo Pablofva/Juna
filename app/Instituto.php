@@ -10,4 +10,5 @@ class Instituto extends Model
     {
     	return $this->hasMany(Carrera::class);
     }
+    public $timestamps = false;
 }

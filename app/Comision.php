@@ -15,4 +15,7 @@ class Comision extends Model
     {
     	return $this->belongsTo(Materia::class);
     }
+
+    public $timestamps = false;
 }
+

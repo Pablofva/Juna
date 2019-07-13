@@ -24,7 +24,7 @@ Route::get('pruebadosinstitutos', 'ControladorDePaginas@institutos');
 
 Route::get('pruebadosingenieria', 'ControladorDePaginas@ingenieria');
 
-Route::get('pruebadosinformatica', 'ControladorDePaginas@informatica');
+Route::get('pruebadosinformatica{materia}', 'ControladorDePaginas@informatica')->name('pruebadosinformatica');
 
 Route::get('pruebadossalud', 'ControladorDePaginas@salud');
 
@@ -34,6 +34,5 @@ Route::get('pruebadossociales', 'ControladorDePaginas@sociales');
 
 Route::get('mapas', 'ControladorDePaginas@mapas');
 
-Route::get('materias', function () {
-    return view('materias');
-});
+
+
