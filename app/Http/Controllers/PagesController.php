@@ -25,4 +25,5 @@ class PagesController extends Controller
     public function oficinas(){
         return view('oficinas');
     }
+
 }
