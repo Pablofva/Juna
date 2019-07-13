@@ -266,3 +266,33 @@ body{
 
 
 }
+.fondo_materia{
+	background-color: aliceblue;
+  }
+  .materia{
+	font: oblique bold 120% cursive;
+	font-size: 20px;
+  }
+  .comision{
+	font-size: 11px;
+	margin-top: 0;
+  margin-bottom: 0;
+  }
+  .fondito{
+	background-color: #ff502f;
+	color: aliceblue;
+  }
+  .btn-circle.btn-lp {
+	width: 50px;
+	height: 50px;
+	padding: 1px 1px;
+	font-size: 10px;
+	line-height: 1.33;
+	border-radius: 25px;
+  }
+  .letrasCirculoMapa{
+	font: oblique bold 120% cursive;
+	font-size: 11px;
+	margin-top: 0;
+  margin-bottom: 0;
+  }

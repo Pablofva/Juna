@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App;
 use App\Carrera;
 use App\Materia;
+use App\Comision;
 
 class PagesController extends Controller
 {
@@ -34,6 +35,21 @@ class PagesController extends Controller
         $materias=Materia::where('carrera_id',$idMateria)->get();
         return $materias;
 
+    }
+    // CONSULTA SIN AJAX LISTAR AULAS
+    public function listarAulas($idMateria=null){
+        // CONSULTA CON INNER JOIN AULAS 
+        
+        $aulas=Comision::select('comisions.numero as comision','comisions.dia_horario as horario','m.nombre as materia','a.nombre as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede')
+        ->join('materias as m','comisions.materia_id','=','m.id')
+        ->join('profesors as p','comisions.profesor_id','=','p.id')
+        ->join('aulas as a','comisions.aula_id','=','a.id')
+        ->join('edificios as e','a.edificio_id','=','e.id')
+        ->join('sedes as s','e.sede_id','=','s.id')
+        ->get();
+        $copia=$aulas;
+        // HACER PAGINA DE AULAS
+        return view('aulas',compact('aulas','copia'));
     }
     public function nosotros($nombre=null){
         $equipo=['juan','david','alex'];

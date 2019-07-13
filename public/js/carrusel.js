@@ -96,7 +96,7 @@ function carrerasAjax(id){
 				contenido.innerHTML +=`
 				<tr>
 				<td>
-				<a href="#carousel" class="carousel-control-next boton-carreras" data-slide="next" onclick="ajaxMaterias(${item.id})"><h4 class="boton-carreras">${item.nombre}</h4></a>
+				<a href="http://juna.test/listarAulas/" class="carousel-control-next boton-carreras" data-slide="next" onclick="ajaxMaterias(${item.id})"><h4 class="boton-carreras">${item.nombre}</h4></a>
 				</td>
 				<td>
 				<h4 class="boton-carreras">${item.anio}</h4>
