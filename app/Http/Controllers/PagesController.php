@@ -40,14 +40,21 @@ class PagesController extends Controller
     public function listarAulas($idMateria=null){
         // CONSULTA CON INNER JOIN AULAS 
         
-        $aulas=Comision::select('comisions.numero as comision','comisions.dia_horario as horario','m.nombre as materia','a.nombre as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede')
+        $aulas=Comision::select('comisions.numero as comision','m.nombre as materia','p.nombre','p.apellido')
+        ->join('materias as m','comisions.materia_id','=','m.id')
+        ->join('profesors as p','comisions.profesor_id','=','p.id')
+        ->join('aulas as a','comisions.aula_id','=','a.id')
+        ->join('edificios as e','a.edificio_id','=','e.id')
+        ->join('sedes as s','e.sede_id','=','s.id')
+        ->distinct()
+        ->get();
+        $copia=Comision::select('comisions.numero as comision','comisions.dia_horario as horario','m.nombre as materia','a.nombre as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede')
         ->join('materias as m','comisions.materia_id','=','m.id')
         ->join('profesors as p','comisions.profesor_id','=','p.id')
         ->join('aulas as a','comisions.aula_id','=','a.id')
         ->join('edificios as e','a.edificio_id','=','e.id')
         ->join('sedes as s','e.sede_id','=','s.id')
         ->get();
-        $copia=$aulas;
         // HACER PAGINA DE AULAS
         return view('aulas',compact('aulas','copia'));
     }
