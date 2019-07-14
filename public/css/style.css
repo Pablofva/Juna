@@ -119,6 +119,17 @@ body {
     animation: entradaBotones 1s ease 1s forwards;
 }
 
+/* ---- Estilos: imagenes del PopPup ---- */
+
+.imagen-sector {
+	width: 100%;
+	height: auto;
+}
+
+.modal-title{
+  color: #353535;
+}
+
 
 /* ---- Animaciones ---- */
 

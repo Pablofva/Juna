@@ -1,4 +1,3 @@
-//alert("Alex");
 // Importo las ID de los elementos a usar
 
 var abrirBuffet = document.getElementById('buffet'),
@@ -13,26 +12,26 @@ var abrirBuffet = document.getElementById('buffet'),
 // Se agrega una imagen segun donde se haya hecho un click
 
 abrirBuffet.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/buffet.jpg');
+	imagen.setAttribute('src', '../img/buffet.jpg');
 })
 
 abrirSala.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/sala.jpg');
+	imagen.setAttribute('src', '../img/3.jpg');
 })
 
 abrirFotocopiadora.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/foto.jpg');
+	imagen.setAttribute('src', '../img/3.jpg');
 })
 
 abrirDepartamentos.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/3.jpg');
+	imagen.setAttribute('src', '../img/3.jpg');
 })
 
 abrirLaboratorio.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/3.jpg');
+	imagen.setAttribute('src', '../img/3.jpg');
 })
 
 abrirBaños.addEventListener('click', function(){
-	imagen.setAttribute('src', 'vista/img/3.jpg');
+	imagen.setAttribute('src', '../img/3.jpg');
 })
 
