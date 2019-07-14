@@ -456,5 +456,11 @@ body {
   }
 }
 
+@media screen and (max-height: 700px){
+
+  .fondo-contenido{
+    height: 100%;
+  }
+}
 
 
