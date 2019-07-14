@@ -25,7 +25,7 @@
             <a href="{{ Route('mapas') }}" class="btn btn-mapas botones-inicio">
                 <i class="fas fa-map-marked-alt"></i> Mapas
             </a>
-         </div>
+        </div>
     </div>
 
 

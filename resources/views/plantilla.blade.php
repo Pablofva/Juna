@@ -11,7 +11,7 @@
             </div>
         </section>
 
-        <section class="text-center pb-5 fondo-contenido" id="contenido">
+        <section class="text-center fondo-contenido" id="contenido">
             <div class="container">
                 @yield('content')
             </div>

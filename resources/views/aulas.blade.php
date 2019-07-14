@@ -24,7 +24,10 @@
         <a href="" class="btn btn-iniciales botones-inicio">
             Estudios Iniciales
         </a>
-     </div>
+    </div>
+    <div class="col-md-12 pt-4">
+        <a href="{{ Route('inicio') }}" class="btn btn-info boton-volver">Volver al inicio</a>
+    </div>
 
 </div>
 
