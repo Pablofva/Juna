@@ -135,7 +135,7 @@ body{
 
 /* RESPONSIVE DEL CARRUSEL - FALTA PARA CELULAR*/
 
-@media screen and (max-width: 1199px){
+/* @media screen and (max-width: 1199px){
 
 	.modal-header{
 		padding: 10px 10px 5px 10px;
@@ -170,9 +170,9 @@ body{
 		padding: 3px 15px 3px 15px;
 	}
 
-}
+} */
 
-@media screen and (max-width: 992px){
+/* @media screen and (max-width: 992px){
 
 	.modal-header{
 		padding: 10px 10px 5px 10px;
@@ -265,7 +265,7 @@ body{
 	}
 
 
-}
+} */
 .fondo_materia{
 	background-color: aliceblue;
   }
@@ -296,3 +296,10 @@ body{
 	margin-top: 0;
   margin-bottom: 0;
   }
+  @media (min-width: 768px) {
+	.modal-xl {
+	  width: 90%;
+	 max-width:1200px;
+	}
+  }
+  

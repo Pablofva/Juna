@@ -1,6 +1,6 @@
 @extends('plantilla')
 @section('seccion')
-<form class="form-inline">
+<form class="form-inline py-3">
                     <div class="input-group">
                       <div class="input-group-prepend">
                         <span class="input-group-text" id="basic-addon1">Comision</span>
@@ -43,7 +43,7 @@
                         <b>EDIFICIO </b>{{$item2->edificio}}
                     </div>
                     <div class="col-sm-6">
-                        <b>SEDE </b>{{$item2->horario}}
+                        <b>SEDE </b>{{$item2->sede}}
                     </div>
                 </div>
                 @endif
@@ -51,8 +51,31 @@
                 @endforeach()  
             </div>
             <div class="col-md-2 ">
+                <!-- BOTON MAPA -->
                 <div class="d-flex flex-column justify-content-center h-100  align-items-center py-2">
-                    <button type="button" class="btn btn-success btn-circle btn-lp"><P class="letrasCirculoMapa">MAPA</P></button>
+                    <!-- IMAGEN BOTON -->
+                    <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-xl"><P class="letrasCirculoMapa">MAPA</P></button>
+                    <!-- MODAL -->
+                    <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    ...SFSDFDSFSDFSDFDSFDSF
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                </div>
+                        </div>
+                    </div>
+                    </div>
+
                 </div>
             </div>
         </div>

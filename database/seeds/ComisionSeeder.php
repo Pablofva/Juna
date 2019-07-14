@@ -41,5 +41,19 @@ class ComisionSeeder extends Seeder
             'numero'=>1,
             'dia_horario'=>'jueves 08:00 a 10:00'
         ]);
+        Comision::create([
+            'materia_id'=>3,
+            'aula_id'=>2,
+            'profesor_id'=>2,
+            'numero'=>2,
+            'dia_horario'=>'miercoles 08:00 a 10:00'
+        ]);
+        Comision::create([
+            'materia_id'=>3,
+            'aula_id'=>2,
+            'profesor_id'=>2,
+            'numero'=>2,
+            'dia_horario'=>'viernes 08:00 a 10:00'
+        ]);
     }
 }

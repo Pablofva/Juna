@@ -37,7 +37,7 @@ class PagesController extends Controller
 
     }
     // CONSULTA SIN AJAX LISTAR AULAS
-    public function listarAulas($idMateria=null){
+    public function listarAulas($id=null){
         // CONSULTA CON INNER JOIN AULAS 
         
         $aulas=Comision::select('comisions.numero as comision','m.nombre as materia','p.nombre','p.apellido')
@@ -46,6 +46,7 @@ class PagesController extends Controller
         ->join('aulas as a','comisions.aula_id','=','a.id')
         ->join('edificios as e','a.edificio_id','=','e.id')
         ->join('sedes as s','e.sede_id','=','s.id')
+        ->where('m.id',$id)
         ->distinct()
         ->get();
         $copia=Comision::select('comisions.numero as comision','comisions.dia_horario as horario','m.nombre as materia','a.nombre as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede')
@@ -54,6 +55,7 @@ class PagesController extends Controller
         ->join('aulas as a','comisions.aula_id','=','a.id')
         ->join('edificios as e','a.edificio_id','=','e.id')
         ->join('sedes as s','e.sede_id','=','s.id')
+        ->where('m.id',$id)
         ->get();
         // HACER PAGINA DE AULAS
         return view('aulas',compact('aulas','copia'));
