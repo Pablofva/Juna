@@ -17,9 +17,9 @@ class CreateAulasTable extends Migration
             $table->Increments('id');
             $table->UnsignedInteger('edificio_id');
             $table->foreign('edificio_id')->references('id')->on('edificios');
+            $table->integer('numero');
             $table->string('nombre');
-            $table->integer('piso');
-            $table->string('estado');
+            $table->string('piso');
             $table->timestamps();
         });
     }

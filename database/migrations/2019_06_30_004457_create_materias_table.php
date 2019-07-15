@@ -18,7 +18,7 @@ class CreateMateriasTable extends Migration
             $table->UnsignedInteger('carrera_id');
             $table->foreign('carrera_id')->references('id')->on('carreras');
             $table->string('nombre');
-            $table->string('desc_corta');
+            $table->string('desc_corta')->nullable();
             $table->integer('anio');
             $table->string('cod_materia');
             $table->timestamps();

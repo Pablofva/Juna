@@ -9,7 +9,16 @@
 <br>
 <br>
 <br>
-<h1>AQUI VA LOS MAPAS DE LAS OFICINAS</h1>
+<br>
+<br>
+<br>
+<h1>CONTENIDO DE LAS OFICINAS</h1>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 <br>
 <br>
 <br>

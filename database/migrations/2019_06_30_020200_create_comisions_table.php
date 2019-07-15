@@ -23,6 +23,7 @@ class CreateComisionsTable extends Migration
             $table->foreign('profesor_id')->references('id')->on('profesors');
             $table->integer('numero');
             $table->string('dia_horario');
+            $table->boolean('estado')->default(true);
             
 
 
