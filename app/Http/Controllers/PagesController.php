@@ -7,6 +7,7 @@ use App;
 use App\Carrera;
 use App\Materia;
 use App\Comision;
+use App\Edificio;
 
 class PagesController extends Controller
 {
@@ -40,7 +41,7 @@ class PagesController extends Controller
     public function listarAulas($id=null){
         // CONSULTA CON INNER JOIN AULAS 
         
-        $aulas=Comision::select('comisions.numero as comision','m.nombre as materia','p.nombre','p.apellido')
+        $aulas=Comision::select('comisions.numero as comision','m.nombre as materia','p.nombre','p.apellido','e.id as edificioId')
         ->join('materias as m','comisions.materia_id','=','m.id')
         ->join('profesors as p','comisions.profesor_id','=','p.id')
         ->join('aulas as a','comisions.aula_id','=','a.id')
@@ -59,6 +60,15 @@ class PagesController extends Controller
         ->get();
         // HACER PAGINA DE AULAS
         return view('aulas',compact('aulas','copia'));
+    }
+
+    // CONSULTA AJAX DEVOLVER IMAGEN
+    
+    public function devolverImagen($idEdificio=null){
+        
+        $edificio=Edificio::where('id',$idEdificio)->get();
+        return $edificio;
+
     }
     public function nosotros($nombre=null){
         $equipo=['juan','david','alex'];

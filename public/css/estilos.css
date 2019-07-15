@@ -302,4 +302,7 @@ body{
 	 max-width:1200px;
 	}
   }
-  
+  #map {
+	height: 500px;
+	width: 100%;
+}  

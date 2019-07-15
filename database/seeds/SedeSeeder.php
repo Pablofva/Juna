@@ -15,12 +15,12 @@ class SedeSeeder extends Seeder
         //
         
         Sede::create([
-            'nombre'=>'HEC',
+            'nombre'=>'YPF',
             'calleynum'=>'#2222',
             'localidad'=>'#2222'
         ]);
         Sede::create([
-            'nombre'=>'YPF',
+            'nombre'=>'HEC',
             'calleynum'=>'#2222',
             'localidad'=>'#2222'
         ]);

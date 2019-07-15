@@ -50,7 +50,7 @@ class ComisionSeeder extends Seeder
         ]);
         Comision::create([
             'materia_id'=>3,
-            'aula_id'=>2,
+            'aula_id'=>4,
             'profesor_id'=>2,
             'numero'=>2,
             'dia_horario'=>'viernes 08:00 a 10:00'

@@ -22,6 +22,7 @@ Route::get('institutos','PagesController@instituto')->name('instituto');
 Route::get('listarCarreras/{idCarrera?}','PagesController@listarCarreras')->name('listarCarreras');
 Route::get('listarMaterias/{idMateria?}','PagesController@listarMaterias')->name('listarMaterias');
 Route::get('listarAulas/{id?}','PagesController@listarAulas')->name('listarAulas');
+Route::get('devolverImagen/{id?}','PagesController@devolverImagen')->name('devolverImagen');
 Route::get('login', 'PagesController@login')->name('noticias');
 Route::get('nosotros/{nombre?}','PagesController@nosotros')->name('nosotros');
 Route::get('leer',function(){

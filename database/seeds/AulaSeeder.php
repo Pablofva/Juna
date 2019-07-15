@@ -15,21 +15,21 @@ class AulaSeeder extends Seeder
         
         Aula::create([
             'edificio_id'=>1,
-            'nombre'=>'UNI9',
+            'nombre'=>'MOSI9',
             'piso'=>0,
             'estado'=>'disponible'
 
             ]);
             Aula::create([
                 'edificio_id'=>1,
-                'nombre'=>'UNI21',
+                'nombre'=>'MOSI21',
                 'piso'=>0,
                 'estado'=>'disponible'
     
                 ]);
                 Aula::create([
                     'edificio_id'=>1,
-                    'nombre'=>'UNI2',
+                    'nombre'=>'MOSI2',
                     'piso'=>1,
                     'estado'=>'disponible'
         

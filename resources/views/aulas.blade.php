@@ -54,18 +54,55 @@
                 <!-- BOTON MAPA -->
                 <div class="d-flex flex-column justify-content-center h-100  align-items-center py-2">
                     <!-- IMAGEN BOTON -->
-                    <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-xl"><P class="letrasCirculoMapa">MAPA</P></button>
+                    <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-xl" onclick="llamarImagen({{$item->edificioId}})"><P class="letrasCirculoMapa">MAPA</P></button>
                     <!-- MODAL -->
                     <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-xl">
                         <div class="modal-content">
                         <div class="modal-header">
-                                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                    <h5 class="modal-title" id="exampleModalLabel">Mapas</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                     <span aria-hidden="true">&times;</span>
                                     </button>
                                 </div>
                                 <div class="modal-body">
+                                    <!-- CARRUSEL -->
+                                    <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner">
+                                                <div class="carousel-item active">
+                                                <div id="map">
+
+                                                    </div>
+                                                <img src="..." class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                <img src="..." class="d-block w-100" alt="...">
+                                                </div>
+                                                <div class="carousel-item">
+                                                <img src="..." class="d-block w-100" alt="...">
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="sr-only">Next</span>
+                                            </a>
+                                            </div> -->
+                                        <!-- FIN DE CARRUSEL -->
+                                    <!-- <div id="map">
+
+                                    </div> -->
+                                    <div id="myimagen">
+
+                                    </div>
                                     ...SFSDFDSFSDFSDFDSFDSF
                                 </div>
                                 <div class="modal-footer">

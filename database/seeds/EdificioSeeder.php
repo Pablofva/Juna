@@ -15,15 +15,18 @@ class EdificioSeeder extends Seeder
         //
         Edificio::create([
             'sede_id'=>1,
-            'nombre'=>'UNICO'
+            'nombre'=>'MOSCONI',
+            'imagen'=>'mosconi.jpg'
             ]);
         Edificio::create([
-                'sede_id'=>2,
-                'nombre'=>'SABIO'
+                'sede_id'=>1,
+                'nombre'=>'SABIO',
+                'imagen'=>'savio.jpg'
             ]);
             Edificio::create([
-                'sede_id'=>2,
-                'nombre'=>'MOSCONI'
+                'sede_id'=>1,
+                'nombre'=>'PISTARINI',
+                'imagen'=>'pistarini.jpg'
             ]);
     }
 }
