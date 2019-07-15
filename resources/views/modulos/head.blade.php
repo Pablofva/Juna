@@ -19,3 +19,6 @@
         
         <!-- Favicon -->
         <link rel="icon" href="{{asset('favicon.ico')}}">
+
+        <!-- Bootstrap DATATABLES -->
+<link rel="stylesheet" href="{{asset('https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css')}}">

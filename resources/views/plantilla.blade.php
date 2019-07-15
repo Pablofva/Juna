@@ -28,5 +28,19 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
         <script type="text/javascript" src="{{asset('js/popup.js')}}"></script>
 
+        <!-- jQuery para DataTables -->
+<script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#materias').DataTable({"info": false,"ordering": false,"paging":   false, "scrollY":        
+                                      "200px","language":{"zeroRecords": "No se encontraron asdasdsa","search":"Buscar:",}
+        }
+            
+            );
+    } );
+    </script>
+
     </body>
 </html>
