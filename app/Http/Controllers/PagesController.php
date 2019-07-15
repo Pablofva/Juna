@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Carrera;
 
 class PagesController extends Controller
 {
@@ -25,5 +26,14 @@ class PagesController extends Controller
     public function oficinas(){
         return view('oficinas');
     }
+
+    public function carreras($id = null)
+    {
+        $carreras = Carrera::where('instituto_id', $id)->pluck('nombre');
+
+        return view('carreras', compact('carreras'));
+    }
+
+
 
 }

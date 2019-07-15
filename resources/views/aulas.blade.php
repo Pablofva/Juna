@@ -6,22 +6,22 @@
 
 <div class="row">
     <div class="col-md-6">
-        <a href="" class="btn btn-ingenieria botones-inicio" id="ingenieria">
+        <a href="{{ Route('carreras', 1) }}" class="btn btn-ingenieria botones-inicio" id="ingenieria">
             Ingeniería y Agronomía
         </a>
     </div>
     <div class="col-md-6">
-        <a href="" class="btn btn-salud botones-inicio">
+        <a href="{{ Route('carreras', 3) }}" class="btn btn-salud botones-inicio">
             Ciencias de la Salud
         </a>
     </div>
     <div class="col-md-6">
-        <a href="" class="btn btn-sociales botones-inicio">
+        <a href="{{ Route('carreras', 2) }}" class="btn btn-sociales botones-inicio">
             Ciencias Sociales y Administración
         </a>
     </div>
     <div class="col-md-6">
-        <a href="" class="btn btn-iniciales botones-inicio">
+        <a href="{{ Route('carreras', 4) }}" class="btn btn-iniciales botones-inicio">
             Estudios Iniciales
         </a>
     </div>
