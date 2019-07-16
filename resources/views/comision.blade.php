@@ -4,101 +4,104 @@
     
 
             	@foreach($comisions as $comision)
-                 <h1 class="letra-titulo"><strong>{{$comision->materia->nombre}}</strong></h1>
+                 <h1 class="letra-titulo"><strong>{{$comision->materia}}</strong></h1>
                 @break
                 @endforeach
-
-
-
-<section class="text-center">
- 
-
-
-<table id="comisiones" class="table">
-    <thead>
-
-        <tr>
-            <th>Comisión</th>
-            <th>Aula</th>
-            <th>Dia</th>
-            <th>Horario</th>
-            <th>Mapa</th>
-            <th>Reportar</th>
-
-        </tr>
-    </thead>
-     <tbody>
-        @foreach($comisions as $comision)
-        <tr>
-             <td>{{ $comision->nombre }}</td>
-             <td>{{ $comision->aula->numero }}</td>
-             <td>{{ $comision->dia }}</td>
-             <td>{{ $comision->horario }}</td>
-             <td><button type="button" class="btn btn-success" data-toggle="modal" data-target="#mapa">
-		  		<i class="fa fa-map-signs" aria-hidden="true"></i> Ubicación</button></td>
-		     <td><button type="button" class="btn btn-danger" data-toggle="modal" data-target="#desactualizada">
-		  		<i class="fa fa-ban" aria-hidden="true"></i> Aula Desactualizada</button></td>
-		    
-           	
-             
-        </tr>
-        @endforeach
-
-    </tbody>
-
-</table>
-
-
-<!-- Modal Aula Desactualizada -->
-<div class="modal fade" id="desactualizada" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLongTitle">Reportar Aula</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-       
-        <form>
-          <div class="form-row">
-
-            <div class="form-group">
-
-                    <select class="custom-select" required>
-                      <option value="">Toque para desplegar el menú de Sedes</option>
-                      <option value="1">Sede Central</option>
-                    </select>
+          <!-- FILTRO DE COMISIONES -->
+                <form class="form-inline py-3">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text" id="basic-addon1">Comision</span>
+                      </div>
+                      <input type="text" id="myInputcomi" onkeyup="filtroComision()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
                     </div>
-                   
-                    <div class="form-group">
-                    <select class="custom-select" required>
-                      <option value="">Toque para desplegar el menú de Edificios</option>
-                      <option value="1">One</option>
-                    </select>
-                    </div>
+                  </form>
+                  
+                  <!-- COMIENZO DE LISTA DE COMISIONES -->
+<ul id="myULcomi">
+@foreach($comisions as $item)
+    <li>
 
-                    <div class="form-group" id="Aulas">
-                    <select class="custom-select" required>
-                      <option value="">Toque para desplegar el menú de Aulas</option>
-                      <option value="1">One</option>
-                    </select>
-                    </div>
-
+        <div class="row py-4 container ml-1">
+            <div class="col-md-3  fondo_materia ">
+                <!-- ROW SECUNDARIO -->
+        
+                <DIV class="d-flex flex-column justify-content-center h-100  align-items-center ">
+                    <P CLASS="materia">{{$item->materia}}</P>
+                    
+                    <P CLASS="comision">Profesor:{{$item->apellido}}</P>
+                    <P CLASS="comision">COMISION:{{$item->comision}}</P>
+                    
+                </div>
+                
+                
+                
             </div>
-          <button class="btn btn-danger" type="submit" id="gracias" ><i class="fa fa-ban" aria-hidden="true"></i> Reportar</button>
-        </form>
-
-      </div>
-
-      <div class="modal-footer">
-        Utilice el botón de reportes en caso de que la comisión no pertenezca al aula mostrada. Caso contrario cierre la ventana de reportes tocando la 'X' en la parte superior izquierda.
-      </div>
-
-    </div>
-   </div>
-</div>
-
-
-@endsection
+            <div class="col-md-4 fondito">
+                @foreach($copia as $item2)
+                @if (($item->materia==$item2->materia)and($item->comision==$item2->comision) ) 
+                <div class="row">
+                    <div class="col-sm-12">
+                        <i class="fas fa-star"></i>
+                        {{$item2->horario}}
+                        
+                    </div>
+                    <div class="col-sm-6">
+                        <b>AULA </b>{{$item2->aula}}
+                    </div>
+                    <div class="col-sm-6">
+                        <b>EDIFICIO </b>{{$item2->edificio}}
+                    </div>
+                    <div class="col-sm-6">
+                        <b>SEDE </b>{{$item2->sede}}
+                        <!--------------- DIV BOTON MAPA --------------------->
+                        <div class="d-flex flex-column justify-content-start h-100  align-items-center py-2">
+                            
+                            <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-xl" onclick="llamarImagen({{$item2}})"><P class="letrasCirculoMapa">MAPA</P></button>
+                            
+                          </div>
+                          <!------------------- HASTA AQUI CHE ------------------------>
+                        </div>
+                      </div>
+                      @endif
+                      
+                      @endforeach()  
+                    </div>
+                    <div class="col-md-2 ">
+                      </div>
+                    </div>
+                  </li>
+                  @endforeach()
+                </ul>
+                <!----------------------------- MODAL ----------------------------------->
+                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Mapas</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        
+                        <!-- <div id="map">
+                          
+                          </div> -->
+                          <div id="myimagen">
+                            
+                            </div>
+                            ...SFSDFDSFSDFSDFDSFDSF
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <script type="text/javascript" src="{{asset('js/filtroComision.js')}}"></script>
+                    
+                    
+                    @endsection
