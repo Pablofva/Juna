@@ -11,17 +11,17 @@
         </a>
     </div>
     <div class="col-md-6">
-        <a href="{{ Route('carreras', 3) }}" class="btn btn-salud botones-inicio">
+        <a href="{{ Route('carreras', 3) }}" class="btn btn-salud botones-inicio" id="salud">
             Ciencias de la Salud
         </a>
     </div>
     <div class="col-md-6">
-        <a href="{{ Route('carreras', 2) }}" class="btn btn-sociales botones-inicio">
+        <a href="{{ Route('carreras', 2) }}" class="btn btn-sociales botones-inicio" id="sociales">
             Ciencias Sociales y Administración
         </a>
     </div>
     <div class="col-md-6">
-        <a href="{{ Route('carreras', 4) }}" class="btn btn-iniciales botones-inicio">
+        <a href="{{ Route('carreras', 4) }}" class="btn btn-iniciales botones-inicio" id="iniciales">
             Estudios Iniciales
         </a>
     </div>
@@ -31,10 +31,5 @@
 
 </div>
 
-
-<!-- Este script cambia el color de la cabecera - se podría usar un color distinto para cada instituto -->
-<script>
-    document.getElementById("fondo-cabecera").style.backgroundColor = "#3B76DB";
-</script>
 
 @endsection
