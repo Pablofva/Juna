@@ -16,8 +16,8 @@ class PagesController extends Controller
         return view('admin/login');
     }
 
-    public function aulas(){
-        return view('aulas');
+    public function institutos(){
+        return view('institutos');
     }
 
     public function mapas(){

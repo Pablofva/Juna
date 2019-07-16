@@ -2,12 +2,12 @@
 
 @section('content')
     
-    <h1 class="letra-titulo"><strong>Bienvenido a JUNÁ</strong></h1>
+    <h1 class="letra-titulo"><strong>Bienvenido a JUNA</strong></h1>
     <h3 class="letra-subtitulo">Escoja una opción para empezar</h3>
 
     <div class="row">
         <div class="col-md-6">
-            <a href="{{ Route('aulas') }}" class="btn btn-aulas botones-inicio">
+            <a href="{{ Route('institutos') }}" class="btn btn-aulas botones-inicio">
                 <i class="fas fa-chalkboard-teacher"></i> Aulas
             </a>
         </div>

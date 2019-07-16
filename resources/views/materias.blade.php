@@ -7,7 +7,7 @@
     <table id="materias" class="table">
         <thead>
             <tr>
-                <th>Materia</th>
+                <th>Materias</th>
             </tr>
         </thead>
         <tbody>

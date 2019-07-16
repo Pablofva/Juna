@@ -13,16 +13,6 @@
             </div>
         @endforeach
     </div>
-    
-
-
-
-
-
-
-
-
-
 
     
     <!-- Este script cambia el color de la cabecera - se podría usar un color distinto para cada instituto -->
