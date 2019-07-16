@@ -7,7 +7,7 @@
     <div class="row">
         @foreach ($carreras as $item)
         <div class="col-md-6">
-            <a href="" class="btn btn-ingenieria botones-inicio" id="" data-toggle="modal" data-target="#Informatica" onclick="materiasAjax({{$item->id}})">
+            <a href="" class="btn btn-ingenieria botones-inicio" id="" data-toggle="modal" data-target="#Informatica" onclick="materiasAjax('{{route('materias',$item->id)}}')">
                     {{$item->nombre}}
                 </a>
                 

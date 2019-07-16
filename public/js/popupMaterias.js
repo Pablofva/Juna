@@ -1,9 +1,7 @@
 contenidoMate = document.getElementById('listarMaterias');
-function materiasAjax(id){
-     console.log(id);
+function materiasAjax(url){
+     console.log(url);
     const miajax= new XMLHttpRequest();
-    var url='http://127.0.0.1:8000/materias/'+id;
-    console.log(url);
     miajax.open('GET',url,true);
     miajax.send();
     miajax.onreadystatechange = function(){
