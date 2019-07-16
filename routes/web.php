@@ -24,3 +24,5 @@ Route::get('/oficinas', 'PagesController@oficinas')->name('oficinas');
 Route::get('/carreras/{id?}', 'PagesController@carreras')->name('carreras');
 
 Route::get('/materias/{id?}', 'PagesController@materias')->name('materias');
+
+Route::get('/listarComisiones/{id?}', 'PagesController@listarComisiones')->name('listarComisiones');

@@ -458,7 +458,14 @@ body {
   }
 
 }
-
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
 /* ---- MEDIA QUERIES - RESPONSIVE -- solución a pantallas cuadradas---- */
 
 @media screen and (max-width: 767px){

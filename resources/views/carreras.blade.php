@@ -7,19 +7,62 @@
     <div class="row">
         @foreach ($carreras as $item)
         <div class="col-md-6">
-            <a href="{{ Route('materias', $item->id) }}" class="btn btn-ingenieria botones-inicio" id="">
+            <a href="" class="btn btn-ingenieria botones-inicio" id="" data-toggle="modal" data-target="#Informatica" onclick="materiasAjax({{$item->id}})">
                     {{$item->nombre}}
                 </a>
+                
+
+              </div>
+              @endforeach
             </div>
-        @endforeach
-    </div>
-    
+            <!-- MODAL -->
+            <div class="modal fade bd-example-modal-lg" id="Informatica" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		  <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLabel">Materias</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body table-wrapper-scroll-y my-custom-scrollbar">
+
+		        <table id="materias" class="table table-bordered table-striped mb-0">
+					<thead>
+
+					    <tr>
+					        <th>Materia</th>
+					        <th>Año</th>
+					        <th>Comisiones</th>
+					    </tr>
+					    
+          </thead>
+          <!-- AQUI SE LISTAN LAS MATERIAS -->
+					 <tbody id="listarMaterias">
+					    
+
+					</tbody>
+
+				</table>
+
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+		        
+		      </div>
+		    </div>
+		  </div>
+		</div>
 
 
-
-
-
-
+	</div>
+</div>
+            
+            
+            
+            
+            
+            
 
 
 
