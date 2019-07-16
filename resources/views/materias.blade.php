@@ -18,7 +18,7 @@
          <tbody>
             @foreach($materias as $item)
             <tr>
-                 <td><a href=""  id="">
+                 <td><a href="{{ route('listarComisiones'), $item->id }}"  id="">
                     {{$item->nombre}}
                 </a></td>
                 
