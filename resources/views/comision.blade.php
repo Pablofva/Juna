@@ -18,7 +18,7 @@
     <thead>
 
         <tr>
-            <th>Comision</th>
+            <th>Comisión</th>
             <th>Aula</th>
             <th>Dia</th>
             <th>Horario</th>
