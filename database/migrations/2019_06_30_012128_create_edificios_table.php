@@ -18,6 +18,7 @@ class CreateEdificiosTable extends Migration
             $table->UnsignedInteger('sede_id');
             $table->foreign('sede_id')->references('id')->on('sedes');
             $table->string('nombre');
+            $table->string('imagen');
             $table->timestamps();
         });
     }

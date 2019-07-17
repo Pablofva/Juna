@@ -51,9 +51,12 @@
                     </div>
                     <div class="col-sm-6">
                         <b>EDIFICIO </b>{{$item2->edificio}}
-                    </div>
-                    <div class="col-sm-6">
+                      </div>
+                      <div class="col-sm-6">
                         <b>SEDE </b>{{$item2->sede}}
+                      </div>
+                      <div class="col-sm-6">
+                        
                         <!--------------- DIV BOTON MAPA --------------------->
                         <div class="d-flex flex-column justify-content-start h-100  align-items-center py-2">
                             
@@ -61,7 +64,7 @@
                             
                           </div>
                           <!------------------- HASTA AQUI CHE ------------------------>
-                        </div>
+                      </div>
                       </div>
                       @endif
                       
@@ -77,8 +80,8 @@
                 <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
                   <div class="modal-dialog modal-xl">
                     <div class="modal-content">
-                      <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Mapas</h5>
+                      <div class="modal-header" >
+                        <h5 class="modal-title" id="header">...</h5><!-- PROYECCION POR JAVASCRIPT -->
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
@@ -88,20 +91,22 @@
                         <!-- <div id="map">
                           
                           </div> -->
-                          <div id="myimagen">
+                          <div id="body">
                             
                             </div>
                             ...SFSDFDSFSDFSDFDSFDSF
                           </div>
-                          <div class="modal-footer">
+                          <div class="modal-footer" >
+                          <h5 class="modal-title" id="footer">...</h5>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button>
                           </div>
                         </div>
                       </div>
                     </div>
-                    
+                    <!-- LLAMADO A SCRIPT DE FILTRO  -->
                     <script type="text/javascript" src="{{asset('js/filtroComision.js')}}"></script>
+                    <script type="text/javascript" src="{{asset('js/popupComisiones.js')}}"></script>
                     
                     
                     @endsection

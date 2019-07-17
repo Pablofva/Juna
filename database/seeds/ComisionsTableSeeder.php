@@ -33,6 +33,15 @@ class ComisionsTableSeeder extends Seeder
 			'aula_id' => 1,
 			'profesor_id'=>1
     		
+		]);
+		Comision::create([
+    		'nombre'=> 'COMISION 1',
+    		'horario'=> '12:00 a 16:00',
+    		'dia' => 'Jueves',
+    		'materia_id' => $id_algo,
+			'aula_id' => 43,
+			'profesor_id'=>1
+    		
     	]);
 
     	Comision::create([
@@ -83,6 +92,15 @@ class ComisionsTableSeeder extends Seeder
     		'dia' => 'Miercoles',
     		'materia_id' => $id_opI,
 			'aula_id' => 2,
+			'profesor_id'=>2
+    		
+		]);
+		Comision::create([
+    		'nombre'=> 'COMISION 1',
+    		'horario'=> '12:00 a 16:00',
+    		'dia' => 'Viernes',
+    		'materia_id' => $id_opI,
+			'aula_id' => 4,
 			'profesor_id'=>2
     		
     	]);
