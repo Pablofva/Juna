@@ -8,14 +8,30 @@
                 @break
                 @endforeach
           <!-- FILTRO DE COMISIONES -->
-                <form class="form-inline py-3">
-                    <div class="input-group">
-                      <div class="input-group-prepend">
-                        <span class="input-group-text" id="basic-addon1">Comision</span>
-                      </div>
-                      <input type="text" id="myInputcomi" onkeyup="filtroComision()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+          <div class="row">
+            <div class="col-sm-6">
+
+              <form class="form-inline py-1">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Comision</span>
                     </div>
-                  </form>
+                    <input type="text" id="myInputcomi" onkeyup="filtroComision()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+
+              <form class="form-inline py-1">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Profesor</span>
+                  </div>
+                  <input type="text" id="myInputprof" onkeyup="filtroProfesor()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </form>
+            </div>
+          </div>
                   
                   <!-- COMIENZO DE LISTA DE COMISIONES -->
 <ul id="myULcomi">
@@ -94,7 +110,7 @@
                           <div id="body">
                             
                             </div>
-                            ...SFSDFDSFSDFSDFDSFDSF
+                            
                           </div>
                           <div class="modal-footer" >
                           <h5 class="modal-title" id="footer">...</h5>
@@ -105,6 +121,7 @@
                       </div>
                     </div>
                     <!-- LLAMADO A SCRIPT DE FILTRO  -->
+                    <script type="text/javascript" src="{{asset('js/filtroProfesor.js')}}"></script>
                     <script type="text/javascript" src="{{asset('js/filtroComision.js')}}"></script>
                     <script type="text/javascript" src="{{asset('js/popupComisiones.js')}}"></script>
                     

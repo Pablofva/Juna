@@ -12,6 +12,7 @@ function llamarImagen(idOb){
     ${idOb.sede}
      `;
      contenidoBody.innerHTML +=`<div class="container">
+     <p class="popupcomi">${idOb.direccion}</p>
       <img src="/img/${idOb.imagen}" class="img-fluid"/>
       </div>
 	 `;
@@ -19,23 +20,5 @@ function llamarImagen(idOb){
 	  ${idOb.edificio}
 	 `;
      
-    // const miajax= new XMLHttpRequest();
-	// 	var url='http://juna.test/devolverImagen/'+idedi;
-	// 	 console.log(url);
-	// 	miajax.open('GET',url,true);
-	// 	miajax.send();
-	// 	miajax.onreadystatechange = function() {
-	// 		if (this.readyState == 4 && this.status == 200) {
-	// 		//    console.log('estoy aqui');
-	// 		//    console.log(this.responseText);
-	// 		  	let datos=JSON.parse(this.responseText);
-	// 			console.log(datos);
-	// 			// LLAMO A LA FUNCION AGREGAR CARRERAS
-	// 			proyectarImagen(conten,datos);
-	// 			// guardarID(datos);
-			 	
-	// 		}
-	// 		// console.log("no entre");
-	// 	  }
 
 }

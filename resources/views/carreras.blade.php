@@ -26,6 +26,32 @@
 		        </button>
 		      </div>
 		      <div class="modal-body table-wrapper-scroll-y my-custom-scrollbar">
+				  <!-- COMIENZO FILTROS -->
+			  <div class="row">
+            <div class="col-sm-6">
+
+              <form class="form-inline py-1">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Materia</span>
+                    </div>
+                    <input type="text" id="myInputmate" onkeyup="filtroMateria()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+
+              <form class="form-inline py-1">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">Año</span>
+                  </div>
+                  <input type="text" id="myInputanio" onkeyup="filtroAnio()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                </div>
+              </form>
+            </div>
+		  </div>
+		  <!-- finfiltro////////// -->
 
 		        <table id="materias" class="table table-bordered table-striped mb-0">
 					<thead>
@@ -72,6 +98,7 @@
     <script>
         document.getElementById("fondo-cabecera").style.backgroundColor = "#3B76DB";
     </script>
-
+<script type="text/javascript" src="{{asset('js/filtroMateria.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/filtroAnio.js')}}"></script>
 
 @endsection
