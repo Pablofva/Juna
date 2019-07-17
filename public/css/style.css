@@ -501,6 +501,9 @@ body {
     margin-top: 0;
     margin-bottom: 0;
     }
+    .popupcomi{
+      color: black;
+    }
 /* ---- MEDIA QUERIES - RESPONSIVE -- solución a pantallas cuadradas---- */
 
 @media screen and (max-width: 767px){

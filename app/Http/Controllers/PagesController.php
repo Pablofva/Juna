@@ -55,7 +55,7 @@ class PagesController extends Controller
         ->distinct()
         ->get();
 
-        $copia=Comision::select('comisions.nombre as comision','comisions.horario as horario','m.nombre as materia','a.numero as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede','e.id as edificioId')
+        $copia=Comision::select('comisions.nombre as comision','comisions.horario as horario','m.nombre as materia','a.numero as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede','s.calleynum as direccion','e.id as edificioId','e.imagen as imagen')
         ->join('materias as m','comisions.materia_id','=','m.id')
         ->join('profesors as p','comisions.profesor_id','=','p.id')
         ->join('aulas as a','comisions.aula_id','=','a.id')
