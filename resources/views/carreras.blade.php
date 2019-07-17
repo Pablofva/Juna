@@ -3,6 +3,15 @@
 @section('content')
     
     <h1 class="letra-titulo"><strong>Seleccione la carrera</strong></h1>
+    <!-- <form class="form-inline py-1">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1">Materia</span>
+                    </div>
+                    <input type="text" id="myInputmate" onkeyup="filtroMateria()" class="form-control" placeholder="Buscar" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                </form> -->
+                <!-- FILTRO -->
 
     <div class="row">
         @foreach ($carreras as $item)

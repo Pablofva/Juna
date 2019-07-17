@@ -13,7 +13,7 @@ function llamarImagen(idOb){
      `;
      contenidoBody.innerHTML +=`<div class="container">
      <p class="popupcomi">${idOb.direccion}</p>
-      <img src="/img/${idOb.imagen}" class="img-fluid"/>
+      <img src="/img/${idOb.imagen}" class="img-fluid" width="500"/>
       </div>
 	 `;
 	 contenidoFooter.innerHTML +=`

@@ -3,10 +3,13 @@
 @section('content')
     
 
-            	@foreach($comisions as $comision)
-                 <h1 class="letra-titulo"><strong>{{$comision->materia}}</strong></h1>
-                @break
-                @endforeach
+            	<!-- @foreach($comisions as $comision)
+              @break
+              @endforeach -->
+              <div class="container">
+
+                <h1 class="letra-titulo"><strong>{{$comision->materia}}</strong></h1>
+              </div>
           <!-- FILTRO DE COMISIONES -->
           <div class="row">
             <div class="col-sm-6">
@@ -76,7 +79,7 @@
                         <!--------------- DIV BOTON MAPA --------------------->
                         <div class="d-flex flex-column justify-content-start h-100  align-items-center py-2">
                             
-                            <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-xl" onclick="llamarImagen({{$item2}})"><P class="letrasCirculoMapa">MAPA</P></button>
+                            <button type="button" class="btn btn-success btn-circle btn-lp" data-toggle="modal" data-target=".bd-example-modal-lg" onclick="llamarImagen({{$item2}})"><P class="letrasCirculoMapa">MAPA</P></button>
                             
                           </div>
                           <!------------------- HASTA AQUI CHE ------------------------>
@@ -93,8 +96,8 @@
                   @endforeach()
                 </ul>
                 <!----------------------------- MODAL ----------------------------------->
-                <div class="modal fade bd-example-modal-xl" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
-                  <div class="modal-dialog modal-xl">
+                <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                  <div class="modal-dialog modal-lg">
                     <div class="modal-content">
                       <div class="modal-header" >
                         <h5 class="modal-title" id="header">...</h5><!-- PROYECCION POR JAVASCRIPT -->
