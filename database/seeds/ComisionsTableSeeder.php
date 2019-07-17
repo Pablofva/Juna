@@ -19,28 +19,27 @@ class ComisionsTableSeeder extends Seeder
     	$id_opI = Materia::where('nombre', 'Sistemas Operativos I')->value('id');
 
     	$this->comisionesAlgoritmos($id_algo);
-    	$this->comisionesSistemaOPI($id_opI);
-        
+		$this->comisionesSistemaOPI($id_opI);
+		$factory = factory(Comision::class, 20)->create();
     }
 
     protected function comisionesAlgoritmos($id_algo)
     {
+		Comision::create([
+    		'nombre'=> '1',
+    		'horario'=> '12:00 a 16:00',
+    		'dia' => 'Lunes',
+    		'materia_id' => $id_algo,
+    		'aula_id' => 1
+    		
+    	]);
+
     	Comision::create([
     		'nombre'=> 'COMISION 1',
     		'horario'=> '12:00 a 16:00',
     		'dia' => 'Lunes',
     		'materia_id' => $id_algo,
-			'aula_id' => 1,
-			'profesor_id'=>1
-    		
-		]);
-		Comision::create([
-    		'nombre'=> 'COMISION 1',
-    		'horario'=> '12:00 a 16:00',
-    		'dia' => 'Jueves',
-    		'materia_id' => $id_algo,
-			'aula_id' => 43,
-			'profesor_id'=>1
+    		'aula_id' => 1
     		
     	]);
 
@@ -49,8 +48,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '15:00 a 19:00',
     		'dia' => 'Jueves',
     		'materia_id' => $id_algo,
-			'aula_id' => 1,
-			'profesor_id'=>2
+    		'aula_id' => 1
     		
     	]);
 
@@ -59,8 +57,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '18:00 a 22:00',
     		'dia' => 'Martes',
     		'materia_id' => $id_algo,
-			'aula_id' => 1,
-			'profesor_id'=>3
+    		'aula_id' => 1
     		
     	]);
     	Comision::create([
@@ -68,8 +65,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '18:00 a 22:00',
     		'dia' => 'Miercoles',
     		'materia_id' => $id_algo,
-			'aula_id' => 1,
-			'profesor_id'=>4
+    		'aula_id' => 1
     		
     	]);
 
@@ -78,8 +74,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '08:00 a 12:00',
     		'dia' => 'Martes',
     		'materia_id' => $id_algo,
-			'aula_id' => 1,
-			'profesor_id'=>3
+    		'aula_id' => 1
     		
     	]);
     }
@@ -91,17 +86,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '12:00 a 16:00',
     		'dia' => 'Miercoles',
     		'materia_id' => $id_opI,
-			'aula_id' => 2,
-			'profesor_id'=>2
-    		
-		]);
-		Comision::create([
-    		'nombre'=> 'COMISION 1',
-    		'horario'=> '12:00 a 16:00',
-    		'dia' => 'Viernes',
-    		'materia_id' => $id_opI,
-			'aula_id' => 4,
-			'profesor_id'=>2
+    		'aula_id' => 2
     		
     	]);
 
@@ -110,8 +95,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '15:00 a 19:00',
     		'dia' => 'Viernes',
     		'materia_id' => $id_opI,
-			'aula_id' => 2,
-			'profesor_id'=>1
+    		'aula_id' => 2
     		
     	]);
 
@@ -120,8 +104,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '18:00 a 22:00',
     		'dia' => 'Miercoles',
     		'materia_id' => $id_opI,
-			'aula_id' => 2,
-			'profesor_id'=>3
+    		'aula_id' => 2
     		
     	]);
     	Comision::create([
@@ -129,8 +112,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '18:00 a 22:00',
     		'dia' => 'Martes',
     		'materia_id' => $id_opI,
-			'aula_id' => 2,
-			'profesor_id'=>2
+    		'aula_id' => 2
     		
     	]);
 
@@ -139,8 +121,7 @@ class ComisionsTableSeeder extends Seeder
     		'horario'=> '08:00 a 12:00',
     		'dia' => 'Martes',
     		'materia_id' => $id_opI,
-			'aula_id' => 2,
-			'profesor_id'=>1
+    		'aula_id' => 2
     		
     	]);
     }

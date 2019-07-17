@@ -30,11 +30,15 @@ class CarrerasTableSeeder extends Seeder
             'instituto_id' => $id_ing,
         ]);
         Carrera::create([
-            'nombre' => 'Ingenieria en Electromecanica',
+            'nombre' => 'Ingenieria Electromecanica',
             'instituto_id' => $id_ing,
         ]);
         Carrera::create([
-            'nombre' => 'Ingenieria en Industrial',
+            'nombre' => 'Ingenieria Industrial',
+            'instituto_id' => $id_ing,
+        ]);
+        Carrera::create([
+            'nombre' => 'Tecnicatura Universitaria en Produccion Vegetal Intensiva',
             'instituto_id' => $id_ing,
         ]);
         Carrera::create([
@@ -50,7 +54,7 @@ class CarrerasTableSeeder extends Seeder
             'instituto_id' => $id_ing,
         ]);
         Carrera::create([
-            'nombre' => 'Ingenieria en transporte',
+            'nombre' => 'Ingenieria en Transporte',
             'instituto_id' => $id_ing,
         ]);
 
