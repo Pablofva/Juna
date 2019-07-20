@@ -15,25 +15,16 @@ class ComisionsTableSeeder extends Seeder
      */
     public function run()
     {
-    	//$id_algo = Materia::where('nombre', 'Algoritmos y Programacion')->value('id');
-    	//$id_opI = Materia::where('nombre', 'Sistemas Operativos I')->value('id');
+    	$id_algo = Materia::where('nombre', 'Algoritmos y Programacion')->value('id');
+    	$id_opI = Materia::where('nombre', 'Sistemas Operativos I')->value('id');
 
-    	//$this->comisionesAlgoritmos($id_algo);
-		//$this->comisionesSistemaOPI($id_opI);
-		$factory = factory(Comision::class, 500)->create();
+    	$this->comisionesAlgoritmos($id_algo);
+    	$this->comisionesSistemaOPI($id_opI);
+        
     }
 
     protected function comisionesAlgoritmos($id_algo)
     {
-		Comision::create([
-    		'nombre'=> '1',
-    		'horario'=> '12:00 a 16:00',
-    		'dia' => 'Lunes',
-    		'materia_id' => $id_algo,
-    		'aula_id' => 1
-    		
-    	]);
-
     	Comision::create([
     		'nombre'=> 'COMISION 1',
     		'horario'=> '12:00 a 16:00',

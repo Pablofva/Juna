@@ -15,7 +15,7 @@ Route::get('/', 'PagesController@inicio')->name('inicio');
 
 Route::get('/login', 'PagesController@login')->name('login');
 
-Route::get('/institutos', 'PagesController@institutos')->name('institutos');
+Route::get('/institutos', 'PagesController@aulas')->name('aulas');
 
 Route::get('/mapas', 'PagesController@mapas')->name('mapas');
 
@@ -24,3 +24,5 @@ Route::get('/oficinas', 'PagesController@oficinas')->name('oficinas');
 Route::get('/carreras/{id?}', 'PagesController@carreras')->name('carreras');
 
 Route::get('/materias/{id?}', 'PagesController@materias')->name('materias');
+
+Route::get('/listarComisiones/{id?}', 'PagesController@listarComisiones')->name('listarComisiones');

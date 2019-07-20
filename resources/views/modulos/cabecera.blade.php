@@ -9,7 +9,44 @@
                 <img class="nav-link" src="{{asset('img/logo-juna.png')}}" alt="JUNA">
             </li>
         </ul>
-        <a href="{{ Route('login') }}" class="btn btn-light"><i class="fas fa-user"></i> Ingresar</a>
+       
+        
+        @if (Request::is('/'))
+         {{--    --}}
+        @else
+            {{--  @if (Request::is('/institutos'))
+            <a href="{{ route('inicio') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver al inicio</a>
+            @endif
+
+            @if (Request::is('/carreras/*'))
+            <a href="{{ route('institutos') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver a institutos</a>
+            <a href="{{ route('inicio') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver al inicio</a>
+             @endif
+
+            @if (Request::is('/listarComisiones/*'))
+            <a href="{{ route('carreras') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver a carreras</a>
+            <a href="{{ route('inicio') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver al inicio</a>
+            @endif  --}}
+            <a href="{{ route('inicio') }}" class="btn btn-light"></i>Volver al inicio</a>
+        @endif
+        
+        
+        
+
+        {{--  @if (Request::is('listarComisiones/*'))
+            <a href="{{ route('inicio') }}" class="btn btn-light"><i class="fas fa-user"></i>Volver al inicio</a>
+        @endif
+        @if (Request::is('/'))
+         <a href="{{ URL::previous() }}" class="btn btn-light"><i class="fas fa-user"></i>Volver atrás</a>
+        @endif
+        @if (Request::is('/'))
+            
+        @endif  --}}
+ 
+        
+        
+       
+        
     </div>
 </nav>
     

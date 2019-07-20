@@ -130,7 +130,17 @@ body {
 .modal-title{
   color: #353535;
 }
-
+.error{
+  font-size: 200px;
+  color: #000;
+}
+.errorText{
+  font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    
+  font-size: 60px;
+  color: #000;
+}
 
 /* ---- Animaciones ---- */
 
@@ -398,6 +408,35 @@ body {
   }
 
 
+  .btn-mapa-universidad { 
+    color: #ffffff; 
+    background-color: #0D8000; 
+    border-color: #0D8000; 
+  } 
+   
+  .btn-mapa-universidad:hover, 
+  .btn-mapa-universidad:focus, 
+  .btn-mapa-universidad:active, 
+  .btn-mapa-universidad.active, 
+  .open .dropdown-toggle.btn-mapa-universidad { 
+    color: #ffffff; 
+    background-color: #0A5402; 
+    border-color: #0D8000; 
+  } 
+   
+  .btn-mapa-universidad:active, 
+  .btn-mapa-universidad.active, 
+  .open .dropdown-toggle.btn-mapa-universidad { 
+    background-image: none; 
+  } 
+
+   
+  .btn-mapa-universidad .badge { 
+    color: #0D8000; 
+    background-color: #ffffff; 
+  }
+
+
 
 /* ---- MEDIA QUERIES - RESPONSIVE -- CELULARES y TABLET---- */
 
@@ -458,6 +497,95 @@ body {
   }
 
 }
+.my-custom-scrollbar {
+  position: relative;
+  height: 400px;
+  overflow: auto;
+  }
+  .table-wrapper-scroll-y {
+  display: block;
+  }
+  /* tabla de comisiones */
+
+
+  .fondo_materia{
+    background-color: aliceblue;
+    border-radius: 30px 0px 0px 0px;
+    border: 2px solid #353535;
+    
+    }
+
+    .fondo-horario{
+      background: #1d99d5;
+      border-top: 2px solid #353535;
+      border-right: 2px solid #353535;
+    }
+    .materia{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    color:black;
+    font-size: 20px;
+    }
+    .comision{
+    font-size: 18px;
+    margin-top: 0;
+    color: black;
+    }
+    .fondito{
+    background-color: #353535;
+    color: aliceblue;
+    border-radius: 0px 30px 30px 0px;
+    }
+    .btn-circle.btn-lp {
+    width: 50px;
+    height: 50px;
+    padding: 1px 1px;
+    font-size: 10px;
+    line-height: 1.33;
+    border-radius: 25px;
+    }
+    .letrasCirculoMapa{
+    font: oblique bold 120% cursive;
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 0;
+    }
+    .popupcomi{
+      font-family: 'Nunito', sans-serif;
+      font-size: 30px;
+      color: black;
+    }
+
+    .lista{
+      height: 500px;
+      overflow: scroll;
+      list-style-type: none;
+      padding-left: 0px;
+    }
+
+    .modal-footer{
+      justify-content: space-between;
+    }
+
+    .img-fluid{
+      border: 2px solid #000;
+    }
+
+    .boton-mapa-uni{
+      width: 100%;
+    }
+
+    .letra-titulo-materia{
+      font-family: 'Nunito', sans-serif;
+      font-size: 50px;
+      text-shadow: 1px 1px 2px #585757;
+      color: #4c4d4d;
+      opacity: 0;
+      padding-top: 50px;
+      padding-bottom: 40px;
+      animation: entradaTitulo 1s ease .5s forwards;
+    }
+
 
 /* ---- MEDIA QUERIES - RESPONSIVE -- solución a pantallas cuadradas---- */
 

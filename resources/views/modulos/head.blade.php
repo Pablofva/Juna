@@ -9,7 +9,7 @@
         <!-- Bootstrap -->
         
         <link rel="stylesheet" href="{{asset('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')}}"  >
-
+        <!-- <link rel="stylesheet" href="{{asset('css/app.css')}}"> -->
         <!-- Estilos -->
         <link rel="stylesheet" href="{{asset('css/style.css')}}">
 
@@ -22,3 +22,5 @@
 
         <!-- Bootstrap DATATABLES -->
         <link rel="stylesheet" href="{{asset('https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css')}}">
+
+

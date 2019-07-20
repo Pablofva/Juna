@@ -7,7 +7,7 @@
 
     <div class="row">
         <div class="col-md-6">
-            <a href="{{ Route('institutos') }}" class="btn btn-aulas botones-inicio">
+            <a href="{{ Route('aulas') }}" class="btn btn-aulas botones-inicio">
                 <i class="fas fa-chalkboard-teacher"></i> Aulas
             </a>
         </div>
