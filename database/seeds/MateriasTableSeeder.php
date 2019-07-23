@@ -24,142 +24,9 @@ class MateriasTableSeeder extends Seeder
         $this->materiasAdminAgraria();
         $this->materiasCienciasAgrarias();
         $this->materiasIngenTransporte();
-<<<<<<< HEAD
-
         //MATERIAS DE SOCIALES
-        $this->materiasRelacionesdeTrabajo();
-        $this->materiasEconomia();
-        $this->materiasAdministracion()
-
-=======
-        //MATERIAS DE SOCIALES
->>>>>>> Alex1
     }
-    protected function materiasRelacionesdeTrabajo()
-	{$id_carrera = Carrera::where('nombre', 'Licenciatura en Relaciones del Trabajo')->value('id');
-    $lista1 =
-        [
-        ['CI001', 'Taller de Lectura y Escritura'],['CI004', 'Prácticas Culturales'],
-        ['CI002', 'Matemática'],['CI005';'Conocimiento Científico y Metodología de la Investigación'],
-        ['CI006', 'Introducción al Desarrollo Sustentable'],['CI003', 'Problemas de Historia Argentina']
-        ];
-        $this->crear_materias($lista1, 1, $id_carrera);
 
-<<<<<<< HEAD
-       
-        $lista2 =[
-            ['CI013', 'Introducción a la Economía'],
-            ['CI014', 'Introducción a la Sociología'], 
-            ['CI015', 'Análisis de  Procesos Económicos, Sociales y Ambientales'], 
-            ['C3001', 'Historia de las Relaciones Laborales'],['CI006', 'Introducción al Derecho'],
-            ['CI017', 'Gestión y Administración de las Organizaciones']
-        ]
-            $this->crear_materias($lista2, 2, $id_carrera);
-            
-        $lista3 =
-        [
-        ['C3002', 'Administración de Personal'], ['C3003', 'Derecho del Trabajo y Legislación    Laboral'],
-         ['C3004', 'Gestión y Capacitación de Recursos Humanos'], ['C3005', 'Cultura y Sociología del Trabajo'], 
-         ['C3006', 'Derecho de la Seguridad Social'], ['C3007', 'Práctica Laboral'], [ 'CI018', 'Análisis de Políticas Públicas']
-        ];
-          $this->crear_materias($lista3, 3, $id_carrera);
-          ///falta 4 y 5
-}
-        
-   protected fuction materiasEconomia()
-   {
-       $id_carrera = Carrera::where('nombre', 'Licenciatura en Economia')->value('id');
-       $lista1=[
-           ['CI001', 'Taller de Lectura y Escritura'],
-           ['CI004', 'Prácticas Culturales'],
-           ['CI002', 'Matemática'],['CI005','Conocimiento Científico y Metodología de la Investigación'],
-           ['CI003', 'Problemas de Historia Argentina'],['CI016', 'Introducción al Derecho'],
-           ['C5002', 'Elementos para el analisis de la sociedad actual']
-             ];
-           $this->crear_materias($lista1, 1, $id_carrera);
-
-       $lista2=[
-            ['C5003', 'Análisis Matemático I'], ['C5007', 'Contabilidad Pública y Privada'],
-            ['C5006', 'Análisis Matemático II'], ['C5004', 'Epistemología de las Ciencias Sociales'],
-            ['C5005', 'Política Económica Argentina'],['CI013', 'Introducción a la Economía']
-            ];
-            
-            $this->crear_materias($lista2, 2, $id_carrera);
-
-       $lista3=[
-
-            ['C5008', 'Análisis Macroeconómico'], ['C5009', 'Estadística para economistas'],
-            ['C5012', 'Historia del pensamiento económico'],
-            ['C5011', 'Análisis Microeconómico'],
-            ['C5013', 'Matemática para economistas'],
-            ['C5014', 'Taller de práctica laboral'], ['C5010', 'Inglés aplicado a las Cs Sociales'],
-       ]
-            $this->crear_materias($lista3, 3, $id_carrera);
-
-       $lista4=[
-            ['C5015', 'Macroeconomía avanzada'], ['C5018', 'Crecimiento y distribución'], 
-            ['C5019', 'Microeconomía avanzada'], ['C5020', 'Estructura productiva argentina'], 
-            ['C5016', 'Historia del pensamiento económico nacional'], ['C5017', 'Economía del sector público'],
-            ['C5021', 'Política tributaria'], ['C5022', 'Matemática financiera']
-       ];
-            
-            $this->crear_materias($lista4, 4, $id_carrera);
-    
-            //FALTA LISTA DEL 5TO
-        }
-
-
-     protected function materiasAdministracion()
-        {
-		$id_carrera = Carrera::where('nombre', 'Licenciatura en Administracion')->value('id');
-        
-        $lista1=
-			[
-	    	['CI001','Taller de Lectura y Escritura'],['CI004', 'Prácticas Culturales'],
-	    	['CI014', 'Introducción a la Sociología'],
-	    	['CI006', 'Introducción al Desarrollo Sustentable'],
-	    	['CI002', 'Matemática'],['CI005','Conocimiento Científico y Metodología de la Investigación']
-            ];
-
-		 $this->crear_materias($lista1, 1, $id_carrera);
-		 
-		 $lista2=
-	    	[
-	    	['CI013', 'Introducción a la Economía'], ['CI015', 'Análisis de  Procesos Económicos, Sociales y Ambientales'],
-	    	['CI016', 'Introducción al Derecho'], 
-	    	['CI017','Gestion y Administracion de las Organizaciones'], 
-	    	['C2001' , 'Estadística'] 
-              ];
-		$this->crear_materias($lista2, 2, $id_carrera);
-		
-		$lista3=
-		     [
-		     ['C2003', 'Contabilidad'],
-	    	 ['C2004','Comercialización y Comunicación'],['C2005', 'Microeconomía']
-	    	 ['C2006', 'Matemática Financiera'],
-           ['C2007', 'Taller de Práctica Laboral'],
-             [ 'CI018', 'Análisis de Políticas Públicas'],
-             ['C2002','Sistemas Administrativos']
-             ];
-		$this->crear_materias($lista3, 3, $id_carrera);
-		 
-        $lista4=
-        [
-            ['C2008' ,' Presupuesto y Gestión de Costos'],
-            ['C2009', 'Macroeconomía y Política Económica'],
-            ['C2010', 'Administración Financiera'],
-            ['C2011', 'Gestión de Recursos Humanos'],
-            ['C2012',  'Impuestos'], ['C2013' ,'Teoría de la Organización y Organización Industrial'],
-            ['C2014' , 'Planificación y Gestión Estratégica'], ['C2016','Taller de Trabajo Final'],
-             ['C2015','Desarrollo Economico Local']
-        ];
-            $this->crear_materias($lista4, 4, $id_carrera);
-		
-    }
-    
-
-=======
->>>>>>> Alex1
 
     //MATERIAS DE ING EN INFORMATICA
     protected function materiasIngenieriaInformatica()
@@ -167,7 +34,6 @@ class MateriasTableSeeder extends Seeder
         $id_carrera = Carrera::where('nombre', 'Ingenieria en Informatica')->value('id');
 
         $lista1 =
-<<<<<<< HEAD
             [
                 ['CI021', 'Taller de Ingeniería'], ['CI004', 'Prácticas Culturales'], 
                 ['CI009', 'Sistemas de Representación'], ['CI002', 'Matemática'],
@@ -179,19 +45,6 @@ class MateriasTableSeeder extends Seeder
 
         $lista2 =
             [
-=======
-            [
-                ['CI021', 'Taller de Ingeniería'], ['CI004', 'Prácticas Culturales'], 
-                ['CI009', 'Sistemas de Representación'], ['CI002', 'Matemática'],
-                ['CI001', 'Taller de Lectura y Escritura'], ['CI010', 'Fundamentos de Informática'],
-                ['CI003', 'Problemas de Historia Argentina'],
-                ['CI012', 'Matemática I'], 
-            ];
-        $this->crear_materias($lista1, 1, $id_carrera);
-
-        $lista2 =
-            [
->>>>>>> Alex1
                 ['I3001', 'Algoritmos y Programación'],
                 ['I3002', 'Organización y Arquitectura de Computadoras'],
                 ['I3003', 'Sistemas Operativos I '],
