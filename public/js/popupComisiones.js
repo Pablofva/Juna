@@ -12,12 +12,20 @@ function llamarImagen(idOb){
     ${idOb.sede}
      `;
      contenidoBody.innerHTML +=`<div class="container">
+<<<<<<< HEAD
      <p class="popupcomi">${idOb.direccion}</p>
+=======
+     <p class="popupcomi">${idOb.edificio}</p>
+>>>>>>> Alex1
       <img src="/img/${idOb.imagen}" class="img-fluid" width="500"/>
       </div>
 	 `;
 	 contenidoFooter.innerHTML +=`
+<<<<<<< HEAD
 	  ${idOb.edificio}
+=======
+	  ${idOb.direccion}
+>>>>>>> Alex1
 	 `;
      
 

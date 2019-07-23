@@ -42,7 +42,11 @@ class PagesController extends Controller
 
         return $materias;
     }
+<<<<<<< HEAD
     public function listarComisiones($id)
+=======
+    public function listarComisiones($id = null)
+>>>>>>> Alex1
     {
         //$comisions = Comision::where('materia_id', $id)->get();
         $comisions=Comision::select('comisions.nombre as comision','m.nombre as materia','p.nombre','p.apellido')
@@ -55,7 +59,11 @@ class PagesController extends Controller
         ->distinct()
         ->get();
 
+<<<<<<< HEAD
         $copia=Comision::select('comisions.nombre as comision','comisions.horario as horario','m.nombre as materia','a.numero as aula','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede','s.calleynum as direccion','e.id as edificioId','e.imagen as imagen')
+=======
+        $copia=Comision::select('comisions.nombre as comision','comisions.horario as horario','comisions.dia as dia','m.nombre as materia','a.numero as aula','a.piso as piso','p.nombre','p.apellido','e.nombre as edificio','s.nombre as sede','s.calleynum as direccion','e.id as edificioId','e.imagen as imagen')
+>>>>>>> Alex1
         ->join('materias as m','comisions.materia_id','=','m.id')
         ->join('profesors as p','comisions.profesor_id','=','p.id')
         ->join('aulas as a','comisions.aula_id','=','a.id')
@@ -63,6 +71,10 @@ class PagesController extends Controller
         ->join('sedes as s','e.sede_id','=','s.id')
         ->where('m.id',$id)
         ->get();
+<<<<<<< HEAD
+=======
+        //dd($comisions);
+>>>>>>> Alex1
         // HACER PAGINA DE AULAS
         return view('comision',compact('comisions','copia'));
     }

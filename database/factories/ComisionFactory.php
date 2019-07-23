@@ -18,7 +18,11 @@ $factory->define(Comision::class, function (Faker $faker) {
         'nombre' => 'Comision ' . $faker->numberBetween(1, 17),
         'horario' => array_random($horarios),
         'dia' => array_random($dias),
+<<<<<<< HEAD
         'materia_id' => $faker->numberBetween(1,393),
+=======
+        'materia_id' => $faker->numberBetween(1,46),
+>>>>>>> Alex1
         'aula_id' => $faker->numberBetween(1, 79),
     ];
 });

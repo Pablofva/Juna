@@ -2,7 +2,7 @@
 
 @section('content')
     
-    <h1 class="letra-titulo"><strong>Bienvenido a JUNÁ</strong></h1>
+    <h1 class="letra-titulo"><strong>Bienvenido a JUNA</strong></h1>
     <h3 class="letra-subtitulo">Escoja una opción para empezar</h3>
 
     <div class="row">

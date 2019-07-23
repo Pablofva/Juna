@@ -15,7 +15,7 @@ Route::get('/', 'PagesController@inicio')->name('inicio');
 
 Route::get('/login', 'PagesController@login')->name('login');
 
-Route::get('/aulas', 'PagesController@aulas')->name('aulas');
+Route::get('/institutos', 'PagesController@aulas')->name('aulas');
 
 Route::get('/mapas', 'PagesController@mapas')->name('mapas');
 

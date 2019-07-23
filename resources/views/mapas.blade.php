@@ -3,7 +3,7 @@
 @section('content')
     
     <h1 class="letra-titulo pt-5 pb-4"><strong>Mapas de la universidad</strong></h1>
-
+<div class="my-custom-scrollbar">
     <div class="row">
             <div class="col-md-6">
                 <button type="button" id="buffet" class="btn btn-mapas btn-block botones-inicio" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-pizza-slice"></i> Buffet</button>
@@ -24,6 +24,7 @@
                 <button type="button" id="baños" class="btn btn-mapas btn-block botones-inicio" data-toggle="modal" data-target=".bd-example-modal-lg"><i class="fas fa-toilet"></i> Baños</button>
             </div>
     </div>
+</div>
 
     <!-- El popup hecho con bootstrap -->
     <div class="modal fade bd-example-modal-lg" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

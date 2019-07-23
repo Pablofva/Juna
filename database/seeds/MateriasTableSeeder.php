@@ -24,12 +24,16 @@ class MateriasTableSeeder extends Seeder
         $this->materiasAdminAgraria();
         $this->materiasCienciasAgrarias();
         $this->materiasIngenTransporte();
+<<<<<<< HEAD
 
         //MATERIAS DE SOCIALES
         $this->materiasRelacionesdeTrabajo();
         $this->materiasEconomia();
         $this->materiasAdministracion()
 
+=======
+        //MATERIAS DE SOCIALES
+>>>>>>> Alex1
     }
     protected function materiasRelacionesdeTrabajo()
 	{$id_carrera = Carrera::where('nombre', 'Licenciatura en Relaciones del Trabajo')->value('id');
@@ -41,6 +45,7 @@ class MateriasTableSeeder extends Seeder
         ];
         $this->crear_materias($lista1, 1, $id_carrera);
 
+<<<<<<< HEAD
        
         $lista2 =[
             ['CI013', 'Introducción a la Economía'],
@@ -153,6 +158,8 @@ class MateriasTableSeeder extends Seeder
     }
     
 
+=======
+>>>>>>> Alex1
 
     //MATERIAS DE ING EN INFORMATICA
     protected function materiasIngenieriaInformatica()
@@ -160,6 +167,7 @@ class MateriasTableSeeder extends Seeder
         $id_carrera = Carrera::where('nombre', 'Ingenieria en Informatica')->value('id');
 
         $lista1 =
+<<<<<<< HEAD
             [
                 ['CI021', 'Taller de Ingeniería'], ['CI004', 'Prácticas Culturales'], 
                 ['CI009', 'Sistemas de Representación'], ['CI002', 'Matemática'],
@@ -171,6 +179,19 @@ class MateriasTableSeeder extends Seeder
 
         $lista2 =
             [
+=======
+            [
+                ['CI021', 'Taller de Ingeniería'], ['CI004', 'Prácticas Culturales'], 
+                ['CI009', 'Sistemas de Representación'], ['CI002', 'Matemática'],
+                ['CI001', 'Taller de Lectura y Escritura'], ['CI010', 'Fundamentos de Informática'],
+                ['CI003', 'Problemas de Historia Argentina'],
+                ['CI012', 'Matemática I'], 
+            ];
+        $this->crear_materias($lista1, 1, $id_carrera);
+
+        $lista2 =
+            [
+>>>>>>> Alex1
                 ['I3001', 'Algoritmos y Programación'],
                 ['I3002', 'Organización y Arquitectura de Computadoras'],
                 ['I3003', 'Sistemas Operativos I '],
