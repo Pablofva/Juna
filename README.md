@@ -1,2 +1,0 @@
-# Juna
-Pizarra electronica unaj
